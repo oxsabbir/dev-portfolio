@@ -13,7 +13,7 @@ const plustJakartaSans = Plus_Jakarta_Sans({
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "900"],
+  weight: ["300", "400", "500", "600", "900"],
   fallback: ["Arial", "Helvetica"],
 });
 
@@ -33,7 +33,7 @@ export default function RootLayout({
         className={`${plustJakartaSans.variable} ${poppins.variable} antialiased`}
       >
         <div className=" bodyGradient overflow-auto h-screen">
-          <div className=" max-w-screen-xxl   m-auto p-3">
+          <div className=" max-w-screen-xxl m-auto p-3">
             <div className=" flex gap-3 justify-between ">
               <div className="w-[320px]">
                 <ProfileCard />
