@@ -18,8 +18,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Sabbir Hossain | Developer Portfolio",
-  description: "Sabbir Hossain - Portfolio",
+  title: "Sabbir Hossain | Full-Stack Developer",
+  description: "Sabbir Hossain - Developer portfolio",
 };
 
 export default function RootLayout({

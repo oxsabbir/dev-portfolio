@@ -14,6 +14,7 @@ export default {
         primary: "#FFFFFF",
         secondery: "#78CC6D",
         textSmColor: "#EAEAEA",
+        whiteLowOpacity: "#FFFFFF1F",
       },
       backgroundImage: {
         primaryGradient:

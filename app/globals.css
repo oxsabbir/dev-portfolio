@@ -33,6 +33,10 @@ body {
   );
 }
 
+.whiteLowOpc {
+  color: #ffffff1f;
+}
+
 .smallTextUpperCase {
   @apply text-sm font-light text-primary font-poppins;
 }

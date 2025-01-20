@@ -1,3 +1,4 @@
+import { socialLinks } from "@/app/utils/constants";
 import profileImage from "@/public/profileImage.png";
 import Image from "next/image";
 export default function ProfileCard() {
@@ -17,13 +18,19 @@ export default function ProfileCard() {
             <p className=" text-secondery text-sm font-normal uppercase">
               Software Engineer
             </p>
-            <h4 className="font-semibold text-3xl">Andrew Ryan</h4>
+            <h4 className="font-semibold text-3xl">Sabbir Hossain</h4>
           </div>
 
-          <div>
-            <ul>
-              <li></li>
-            </ul>
+          <div className="flex items-center gap-4 justify-center">
+            {socialLinks.map((item) => (
+              <a
+                key={item.title}
+                className=" p-3 border-whiteLowOpacity border-2 rounded-2xl"
+                href={item.link}
+              >
+                {<item.icon />}
+              </a>
+            ))}
           </div>
         </div>
       </div>
