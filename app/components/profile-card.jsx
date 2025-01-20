@@ -5,7 +5,7 @@ export default function ProfileCard() {
   return (
     <>
       <div className="bg-background lg:sticky top-0 cardBackground rounded-xl p-4 rounded-tr-none">
-        <div className=" p-4">
+        <div className=" p-4 pb-0 flex flex-col gap-5">
           <Image
             src={profileImage}
             width={280}
@@ -14,7 +14,7 @@ export default function ProfileCard() {
             className=" rounded-xl rounded-tr-none"
           />
 
-          <div className=" flex flex-col items-center gap-3 py-5">
+          <div className=" flex flex-col items-center gap-3 ">
             <p className=" text-secondery text-sm font-normal uppercase">
               Software Engineer
             </p>
@@ -25,13 +25,18 @@ export default function ProfileCard() {
             {socialLinks.map((item) => (
               <a
                 key={item.title}
-                className=" p-3 border-whiteLowOpacity border-2 rounded-2xl"
+                className=" p-2.5 border-whiteLowOpacity border-2 rounded-2xl"
                 href={item.link}
               >
                 {<item.icon />}
               </a>
             ))}
           </div>
+        </div>
+        <div className=" flex items-center justify-between mt-5 px-4 text-sm gradientBorderTop font-semibold text-center">
+          <a className="p-2">Get Resume</a>
+          <div className=" gradientBorderCenter h-full bg-green-200">6</div>
+          <a className="p-2">Contact Me</a>
         </div>
       </div>
     </>
