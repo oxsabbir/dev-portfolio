@@ -34,9 +34,9 @@ export default function ProfileCard() {
           </div>
         </div>
         <div className=" flex items-center justify-between mt-5 px-4 text-sm gradientBorderTop font-semibold text-center">
-          <a className="p-2">Get Resume</a>
-          <div className=" gradientBorderCenter h-full bg-green-200">6</div>
-          <a className="p-2">Contact Me</a>
+          <a className="py-3 ">Contact Me</a>
+          <div className=" gradientBorderCenter h-[40px] gradientBorderCenter w-[1px] "></div>
+          <a className="py-3">Contact Me</a>
         </div>
       </div>
     </>

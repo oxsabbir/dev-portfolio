@@ -54,14 +54,14 @@ body {
 .gradientBorderCenter {
   border: 1px solid;
   border-bottom: 0;
-  border-right: 0;
-  border-left: 0;
+  border-right: 1;
+  border-top: 0;
   border-image-slice: 1;
   border-width: 1px;
   border-image-source: radial-gradient(
     circle at center,
     white 0,
-    #ffffff1f 70%
+    #ffffff1f 75%
   );
 }
 
