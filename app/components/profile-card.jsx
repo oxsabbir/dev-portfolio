@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function ProfileCard() {
   return (
     <>
-      <div className="bg-background lg:sticky top-0 cardBackground rounded-xl p-4 rounded-tr-none">
+      <div className="bg-background lg:sticky top-0 cardBackground rounded-xl p-4 pb-0 rounded-tr-none">
         <div className=" p-4 pb-0 flex flex-col gap-5">
           <Image
             src={profileImage}
@@ -34,9 +34,8 @@ export default function ProfileCard() {
           </div>
         </div>
         <div className=" flex items-center justify-between mt-5 px-4 text-sm gradientBorderTop font-semibold text-center">
-          <a className="py-3 ">Contact Me</a>
-          <div className=" gradientBorderCenter h-[40px] gradientBorderCenter w-[1px] "></div>
-          <a className="py-3">Contact Me</a>
+          <a className="py-4 w-full">Resume</a>
+          <a className="py-4 gradientBorderCenter w-full">Contact Me</a>
         </div>
       </div>
     </>
