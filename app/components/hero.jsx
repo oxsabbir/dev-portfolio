@@ -1,13 +1,13 @@
 export default function Hero() {
   return (
     <>
-      <div className="md:p-14 px-10 rounded-tr-xl bg-background">
+      <div className="md:p-14 px-10 py-10 rounded-tr-xl bg-background  bg-primaryGradient">
         <h4 className="text-2xl font-poppins">
           Hello I'm <span className="text-secondery">Sabbir Hossain</span>
         </h4>
-        <div className=" py-5">
-          <h2 className="font-plusJakarta text-5xl leading-tight font-medium">
-            Senior Data Engineer and <br />{" "}
+        <div className="py-5">
+          <h2 className="font-plusJakarta lg:text-5xl text-3xl leading-9 lg:leading-tight font-medium">
+            Senior Data Engineer and <br className="hidden lg:block" />{" "}
             <span className="px-4 my-1 -rotate-2 font-poppins inline-block rounded-[50px] font-medium bg-secondery text-background">
               Data Scientist
             </span>{" "}
@@ -19,7 +19,7 @@ export default function Hero() {
           solution designer, and data architect. Strong engineering background
           combined with closely working with business customers.
         </p>
-        <div className="pt-8 flex items-start justify-between">
+        <div className="pt-8 flex lg:flex-row flex-wrap  gap-4 items-center justify-between">
           <div className=" flex items-center gap-4">
             <h3 className="font-plusJakarta text-6xl">20</h3>
 
