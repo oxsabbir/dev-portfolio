@@ -1,6 +1,8 @@
 import { socialLinks } from "@/app/utils/constants";
 import profileImage from "@/public/profileImage.png";
 import Image from "next/image";
+import Link from "next/link";
+
 export default function ProfileCard() {
   return (
     <>
@@ -34,8 +36,12 @@ export default function ProfileCard() {
           </div>
         </div>
         <div className=" flex items-center justify-between mt-5 px-4 text-sm gradientBorderTop font-semibold text-center">
-          <a className="py-4 w-full">Resume</a>
-          <a className="py-4 gradientBorderCenter w-full">Contact Me</a>
+          <Link className="py-4 w-full" href={"#"}>
+            Resume
+          </Link>
+          <Link className="py-4 gradientBorderCenter w-full" href={"#"}>
+            Contact Me
+          </Link>
         </div>
       </div>
     </>

@@ -35,7 +35,7 @@ export default function RootLayout({
         <div className=" bodyGradient overflow-auto h-screen">
           <div className=" max-w-screen-xxl m-auto p-3">
             <div className=" flex gap-3 justify-between ">
-              <div className="w-[320px]">
+              <div className="min-w-[340px]">
                 <ProfileCard />
               </div>
               <div className="flex-grow">{children}</div>
