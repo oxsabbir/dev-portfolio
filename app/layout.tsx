@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Poppins } from "next/font/google";
-import ProfileCard from "@/app/components/profile-card";
 import "./globals.css";
 
 const plustJakartaSans = Plus_Jakarta_Sans({
@@ -32,14 +31,9 @@ export default function RootLayout({
       <body
         className={`${plustJakartaSans.variable} ${poppins.variable} antialiased`}
       >
-        <div className=" bodyGradient overflow-auto h-screen">
-          <div className=" max-w-screen-xxl m-auto p-3">
-            <div className=" flex md:flex-row flex-col  gap-3 justify-between ">
-              <div className="min-w-[340px]">
-                <ProfileCard />
-              </div>
-              <div className="flex-grow">{children}</div>
-            </div>
+        <div className="bodyGradient overflow-auto h-screen">
+          <div className="max-w-screen-xxl m-auto p-3">
+            <div>{children}</div>
           </div>
         </div>
       </body>

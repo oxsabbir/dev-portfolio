@@ -4,18 +4,6 @@ export default function Home() {
     <>
       <main className="flex flex-col gap-2">
         <Hero />
-        <Hero />
-        <Hero />
-        <Hero />
-        <Hero />
-        <Hero />
-        <Hero />
-        <Hero />
-        <Hero />
-        <Hero />
-        <Hero />
-        <Hero />
-        <Hero />
       </main>
     </>
   );
