@@ -1,9 +1,11 @@
 import Hero from "@/app/components/hero";
+import SkillSection from "./components/skills";
 export default function Home() {
   return (
     <>
-      <main className="flex flex-col gap-2">
+      <main>
         <Hero />
+        <SkillSection />
       </main>
     </>
   );

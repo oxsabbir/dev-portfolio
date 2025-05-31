@@ -76,5 +76,5 @@ body {
 }
 
 .cardBackground {
-  @apply bg-primaryGradient;
+  @apply bg-primaryGradient bg-background;
 }
