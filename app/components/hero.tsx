@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="min-w-[340px]">
         <ProfileCard />
       </div>
-      <div className="md:p-14 px-10 py-10  flex-grow bg-background  bg-primaryGradient">
+      <div className="md:p-14 px-10 py-10  flex-grow bg-background bg-heroBgGradient">
         <h4 className="text-2xl font-poppins">
           Hello I'm <span className="text-secondery">Sabbir Hossain</span>
         </h4>

@@ -18,10 +18,10 @@ export default function SectionWrapper({
 }: SectionWrapperProps) {
   return (
     <section
-      className={`p-4  md:p-8 my-4 bg-primaryGradient bg-background ${className}`}
+      className={`p-4 py-8  md:p-8 my-4 bg-seconderGradient bg-background ${className}`}
     >
-      <div className=" flex flex-col gap-3 mb-6">
-        <div className=" px-4 py-2 rounded-3xl border flex items-center w-fit border-offWhite  gap-2">
+      <div className="flex flex-col gap-3 mb-6">
+        <div className="px-4 py-2 rounded-3xl border flex items-center w-fit border-offWhite  gap-2">
           <Icon strokeWidth={1.4} className="w-6 h-6" />
           <h5 className="font-poppins font-light  text-base">{title}</h5>
         </div>

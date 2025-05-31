@@ -17,6 +17,7 @@ export default {
         offWhite: "#FFFFFF1F",
       },
       backgroundImage: {
+        heroBgGradient: "var(--hero-bg-gradient)",
         primaryGradient:
           "linear-gradient(112.564deg, rgba(255, 255, 255, 10%) 0%, rgba(255, 255, 255, 0%) 99%);",
         seconderGradient:
