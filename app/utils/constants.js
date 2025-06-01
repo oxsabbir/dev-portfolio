@@ -26,6 +26,7 @@ import {
   SiYarn,
   SiVercel,
   SiNetlify,
+  SiPostgresql,
 } from "@icons-pack/react-simple-icons";
 
 import { Github, Linkedin, Twitter } from "lucide-react";
@@ -126,9 +127,9 @@ export const backendTechStack = [
     subtitle: "MongoDB ODM for Node.js",
   },
   {
-    name: "MySQL",
-    icon: SiMysql,
-    color: "#4479A1",
+    name: "PostgreSQL",
+    icon: SiPostgresql,
+    color: "#4169E1",
     subtitle: "Relational SQL Database",
   },
   {
