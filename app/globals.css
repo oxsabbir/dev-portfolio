@@ -7,8 +7,19 @@
   --foreground: #0c0c0c;
   --hero-bg-gradient: linear-gradient(
     63deg,
-    rgba(255, 255, 255, 10%) 15%,
+    rgba(255, 255, 255, 7%) 15%,
     rgba(255, 255, 255, 0%) 70%
+  );
+
+  --profile-gradient: linear-gradient(
+    -63deg,
+    rgba(255, 255, 255, 7%) 15%,
+    rgba(255, 255, 255, 0%) 70%
+  );
+  --card-gradient: linear-gradient(
+    65deg,
+    rgba(255, 255, 255, 0%) 2%,
+    rgb(0, 0, 0, 100%) 20%
   );
 }
 
@@ -18,8 +29,18 @@
     --foreground: #ffffff;
     --hero-bg-gradient: linear-gradient(
       63deg,
-      rgba(255, 255, 255, 10%) 15%,
+      rgba(255, 255, 255, 7%) 15%,
       rgba(255, 255, 255, 0%) 70%
+    );
+    --profile-gradient: linear-gradient(
+      -63deg,
+      rgba(255, 255, 255, 7%) 15%,
+      rgba(255, 255, 255, 0%) 70%
+    );
+    --card-gradient: linear-gradient(
+      65deg,
+      rgba(255, 255, 255, 0%) 2%,
+      rgb(0, 0, 0, 100%) 20%
     );
   }
 }
@@ -83,8 +104,4 @@ body {
 }
 .sectionHeaderText {
   @apply text-5xl font-plusJakarta text-primary;
-}
-
-.cardBackground {
-  @apply bg-primaryGradient bg-background;
 }

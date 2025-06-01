@@ -1,3 +1,33 @@
+import {
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiRedux,
+  SiFramer,
+  SiReactrouter,
+  SiVite,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiMysql,
+  SiJsonwebtokens,
+  SiPrisma,
+  SiMongoose,
+  SiSocketdotio,
+  SiPostman,
+  SiFigma,
+  SiGithub,
+  SiGit,
+  SiEslint,
+  SiPrettier,
+  SiNpm,
+  SiYarn,
+  SiVercel,
+  SiNetlify,
+} from "@icons-pack/react-simple-icons";
+
 import { Github, Linkedin, Twitter } from "lucide-react";
 export const socialLinks = [
   { title: "github", link: "https://github.com/oxsabbir", icon: Github },
@@ -10,5 +40,181 @@ export const socialLinks = [
     title: "x",
     link: "https://x.com/sabbir2always",
     icon: Twitter,
+  },
+];
+
+export const frontendTechStack = [
+  {
+    name: "JavaScript",
+    icon: SiJavascript,
+    color: "#F7DF1E",
+    subtitle: "Frontend Programming Language",
+  },
+  {
+    name: "TypeScript",
+    icon: SiTypescript,
+    color: "#3178C6",
+    subtitle: "Typed JavaScript Superset",
+  },
+  {
+    name: "React",
+    icon: SiReact,
+    color: "#61DAFB",
+    subtitle: "Frontend UI Library",
+  },
+  {
+    name: "Next.js",
+    icon: SiNextdotjs,
+    color: "#fff",
+    subtitle: "React Framework for Fullstack Apps",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: SiTailwindcss,
+    color: "#06B6D4",
+    subtitle: "Utility-first CSS Framework",
+  },
+  {
+    name: "Framer Motion",
+    icon: SiFramer,
+    color: "#0055FF",
+    subtitle: "React Animation Library",
+  },
+  {
+    name: "Redux",
+    icon: SiRedux,
+    color: "#764ABC",
+    subtitle: "State Management Library",
+  },
+  {
+    name: "React Router",
+    icon: SiReactrouter,
+    color: "#CA4245",
+    subtitle: "Routing Library for React",
+  },
+  {
+    name: "Vite",
+    icon: SiVite,
+    color: "#646CFF",
+    subtitle: "Blazing Fast Frontend Build Tool",
+  },
+];
+
+export const backendTechStack = [
+  {
+    name: "Node.js",
+    icon: SiNodedotjs,
+    color: "#339933",
+    subtitle: "JavaScript Runtime for Backend",
+  },
+  {
+    name: "Express.js",
+    icon: SiExpress,
+    color: "#000000",
+    subtitle: "Minimalist Backend Framework for Node",
+  },
+  {
+    name: "MongoDB",
+    icon: SiMongodb,
+    color: "#47A248",
+    subtitle: "NoSQL Database",
+  },
+  {
+    name: "Mongoose",
+    icon: SiMongoose,
+    color: "#880000",
+    subtitle: "MongoDB ODM for Node.js",
+  },
+  {
+    name: "MySQL",
+    icon: SiMysql,
+    color: "#4479A1",
+    subtitle: "Relational SQL Database",
+  },
+  {
+    name: "Prisma",
+    icon: SiPrisma,
+    color: "#2D3748",
+    subtitle: "Type-safe ORM for SQL Databases",
+  },
+  {
+    name: "JWT (Auth)",
+    icon: SiJsonwebtokens,
+    color: "#000000",
+    subtitle: "Authentication Token Standard",
+  },
+  {
+    name: "Socket.io",
+    icon: SiSocketdotio,
+    color: "#010101",
+    subtitle: "Real-time Web Communication Library",
+  },
+];
+export const toolsStack = [
+  // {
+  //   name: "VS Code",
+  //   icon: SiVisualstudiocode,
+  //   color: "#007ACC",
+  //   subtitle: "Code Editor",
+  // },
+  {
+    name: "Git",
+    icon: SiGit,
+    color: "#F05032",
+    subtitle: "Version Control System",
+  },
+  {
+    name: "GitHub",
+    icon: SiGithub,
+    color: "#181717",
+    subtitle: "Code Hosting Platform",
+  },
+  {
+    name: "Postman",
+    icon: SiPostman,
+    color: "#FF6C37",
+    subtitle: "API Testing Tool",
+  },
+  {
+    name: "Figma",
+    icon: SiFigma,
+    color: "#F24E1E",
+    subtitle: "UI/UX Design Tool",
+  },
+  {
+    name: "ESLint",
+    icon: SiEslint,
+    color: "#4B32C3",
+    subtitle: "Linting Tool for JS/TS",
+  },
+  {
+    name: "Prettier",
+    icon: SiPrettier,
+    color: "#F7B93E",
+    subtitle: "Code Formatter",
+  },
+  {
+    name: "NPM",
+    icon: SiNpm,
+    color: "#CB3837",
+    subtitle: "Package Manager",
+  },
+  {
+    name: "Yarn",
+    icon: SiYarn,
+    color: "#2C8EBB",
+    subtitle: "Alternative Package Manager",
+  },
+  {
+    name: "Vercel",
+    icon: SiVercel,
+    color: "#000000",
+    subtitle: "Frontend Deployment Platform",
+  },
+  {
+    name: "Netlify",
+    icon: SiNetlify,
+    color: "#00C7B7",
+    subtitle: "Static Site Hosting Platform",
   },
 ];

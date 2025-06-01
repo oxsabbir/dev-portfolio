@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function ProfileCard() {
   return (
     <>
-      <div className="lg:sticky top-0 cardBackground  p-4 pb-0 ">
+      <div className="lg:sticky top-0  bg-profileBgGradient bg-background  p-4 pb-0 ">
         <div className=" p-4 pb-0 flex flex-col gap-5">
           <Image
             src={profileImage}
