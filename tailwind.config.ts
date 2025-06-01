@@ -20,6 +20,7 @@ export default {
         heroBgGradient: "var(--hero-bg-gradient)",
         profileBgGradient: "var(--profile-gradient)",
         cardGradient: "var(--card-gradient)",
+        cardRadialGradient: "var(--card-radial-gradient)",
       },
       fontFamily: {
         plusJakarta: "var(--font-plus-jakarta-sans)",

@@ -219,3 +219,22 @@ export const toolsStack = [
     subtitle: "Static Site Hosting Platform",
   },
 ];
+
+export const educationData = [
+  {
+    title: "Diploma In Computer Technology",
+    institution: "Pabna Polytechnic Institute",
+    duration: "2019 - 2024",
+    description:
+      "Studied software development fundamentals with a focus on programming, object-oriented concepts, and databases. Built small projects and gained hands-on experience that strengthened problem-solving skills.",
+    tags: ["JavaScript", "C", "OOP", "MySQL", "Problem Solving"],
+  },
+  {
+    title: "Secondary School Certificate (SSC)",
+    institution: "Pabna, Rajshahi",
+    duration: "2013 - 2019",
+    description:
+      "Completed foundational education with a strong focus on science and mathematics. Built critical problem-solving skills and discipline that laid the groundwork for future technical studies.",
+    tags: ["Science", "Mathematics", "Discipline", "Focus"],
+  },
+];
