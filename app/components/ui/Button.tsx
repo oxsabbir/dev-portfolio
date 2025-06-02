@@ -5,8 +5,7 @@ type ButtonProps = {
   variant?: "primary" | "plain" | "secondery";
   size?: "sm" | "md" | "lg";
   className?: string;
-  rest?: React.HtmlHTMLAttributes<HTMLButtonElement>;
-};
+} & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 export default function Button({
   children,
@@ -17,7 +16,7 @@ export default function Button({
 }: ButtonProps) {
   return (
     <button
-      className={`${styles[variant]} ${styles[size]} rounded-lg ${className}`}
+      className={`${styles[variant]} cursor-pointer border border-transparent duration-200 transition-all ${styles[size]} rounded-sm ${className}`}
       {...rest}
     >
       {children}
@@ -26,8 +25,10 @@ export default function Button({
 }
 
 const styles = {
-  primary: "text-[#323232] text-base bg-secondery p-2 px-4",
-  secondery: "text-[#ffffffe7] text-base bg-[#ffffff09] p-2 px-4",
+  primary:
+    "text-[#323232] text-base bg-secondery hover:border-[#323232] p-2 px-4",
+  secondery:
+    "text-[#ffffffe7] text-base bg-[#ffffff09] hover:border-white p-2 px-4",
   plain: "",
   sm: "text-sm p-1.5 px-2",
   md: "",

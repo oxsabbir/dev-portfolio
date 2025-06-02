@@ -60,9 +60,9 @@ export default function Experiences() {
                 <Button
                   size="sm"
                   variant="secondery"
-                  className="w-fit mx-auto rounded-3xl mt-2"
+                  className="w-fit mx-auto !rounded-none mt-2"
                 >
-                  Learn more
+                  Details
                 </Button>
               </div>
             </div>
