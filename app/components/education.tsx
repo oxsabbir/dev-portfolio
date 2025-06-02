@@ -1,13 +1,13 @@
-import { ChevronRight, GraduationCap } from "lucide-react";
+import { GraduationCap } from "lucide-react";
 import { educationData } from "../utils/constants";
 
 import SectionWrapper from "./section-wrapper";
-import Button from "./ui/Button";
 export default function Education() {
   return (
     <SectionWrapper
       icon={GraduationCap}
       title="Education"
+      className="my-0"
       subTitle="Academic Background"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

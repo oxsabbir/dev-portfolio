@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 import { Briefcase } from "lucide-react";
 const arr = [1, 2, 3, 4, 5, 6, 8];
 import SectionWrapper from "./section-wrapper";
+import Button from "./ui/Button";
 export default function Experiences() {
   const swiper = useSwiper();
 
@@ -42,8 +43,8 @@ export default function Experiences() {
       >
         {arr.map((item) => (
           <SwiperSlide key={item}>
-            <div className="mb-16 xl p-6 rounded-lg flex flex-col items-center justify-center">
-              <p className="xp-date relative w-full text-center mb-12 font-medium text-base text-secondery ">
+            <div className="mb-12 xl p-6 rounded-lg flex flex-col items-center justify-center">
+              <p className="xp-date relative w-full text-center mb-16 font-medium text-base text-secondery ">
                 2022 - Present
               </p>
               <div className=" flex flex-col gap-3 justify-center items-cente text-center">
@@ -56,6 +57,13 @@ export default function Experiences() {
                   technologies – Spark, Hive, Flink, Presto, Snowflake, Map
                   Reduce, YARN, Amazon AWS.
                 </p>
+                <Button
+                  size="sm"
+                  variant="secondery"
+                  className="w-fit mx-auto rounded-3xl mt-2"
+                >
+                  Learn more
+                </Button>
               </div>
             </div>
           </SwiperSlide>
