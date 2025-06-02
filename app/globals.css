@@ -106,6 +106,29 @@ body {
   );
 }
 
+/* EXPERIENCE DATE DOT AND LINE */
+.xp-date::before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: calc(50% - 5px);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background: #78cc6d;
+  z-index: 2;
+}
+
+.xp-date::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: -50%;
+  width: 200%;
+  border-bottom: 1px solid #3d3d3d;
+}
+
 .smallTextUpperCase {
   @apply text-sm font-light text-primary font-poppins;
 }

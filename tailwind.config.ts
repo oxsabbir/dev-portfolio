@@ -13,7 +13,7 @@ export default {
         foreground: "var(--foreground)",
         primary: "#FFFFFF",
         secondery: "#78CC6D",
-        textSmColor: "#EAEAEA",
+        smGray: "#EAEAEA",
         offWhite: "#FFFFFF1F",
       },
       backgroundImage: {

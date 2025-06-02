@@ -27,9 +27,7 @@ export default function ToolsCard({
               <item.icon style={{ color: item.color }} size={45} />
               <div>
                 <h3 className="text-base font-poppins">{item.name}</h3>
-                <p className="mt-0.5 text-[#ebebebe5]  text-sm">
-                  {item.subtitle}
-                </p>
+                <p className="mt-0.5 text-smGray  text-sm">{item.subtitle}</p>
               </div>
             </div>
           </div>
