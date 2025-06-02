@@ -14,7 +14,7 @@ export default function Education() {
         {educationData.map((item, i) => (
           <div
             key={i}
-            className="bg-[#ffffff05] transition-all duration-300 hover:scale-[1.01] flex flex-col justify-between hover:shadow-md p-8 rounded-lg border border-offWhite"
+            className="bg-background bg-cardGradient transition-all duration-300 hover:scale-[1.01] flex flex-col justify-between hover:shadow-md p-8 rounded-lg border border-offWhite"
           >
             <div className=" flex flex-col gap-2 mb-3">
               <p className="py-1 p-2 text-[#666666] border border-offWhite text-sm font-poppins rounded-md w-fit">

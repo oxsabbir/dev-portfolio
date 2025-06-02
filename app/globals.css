@@ -43,9 +43,9 @@
       rgba(255, 255, 255, 0%) 70%
     );
     --card-gradient: linear-gradient(
-      65deg,
+      -65deg,
       rgba(255, 255, 255, 0%) 2%,
-      rgb(0, 0, 0, 100%) 20%
+      rgba(255, 255, 255, 8%) 100%
     );
     --card-radial-gradient: radial-gradient(
       65deg,

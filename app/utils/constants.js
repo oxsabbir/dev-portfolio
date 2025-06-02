@@ -152,12 +152,6 @@ export const backendTechStack = [
   },
 ];
 export const toolsStack = [
-  // {
-  //   name: "VS Code",
-  //   icon: SiVisualstudiocode,
-  //   color: "#007ACC",
-  //   subtitle: "Code Editor",
-  // },
   {
     name: "Git",
     icon: SiGit,
