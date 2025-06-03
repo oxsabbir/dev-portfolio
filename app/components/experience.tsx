@@ -10,8 +10,6 @@ const arr = [1, 2, 3, 4, 5, 6, 8];
 import SectionWrapper from "./section-wrapper";
 import Button from "./ui/Button";
 export default function Experiences() {
-  const swiper = useSwiper();
-
   return (
     <SectionWrapper
       icon={Briefcase}
@@ -43,7 +41,7 @@ export default function Experiences() {
       >
         {arr.map((item) => (
           <SwiperSlide key={item}>
-            <div className="mb-12 xl p-6 rounded-lg flex flex-col items-center justify-center">
+            <div className="mb-12 xl cursor-grab p-6 rounded-lg flex flex-col items-center justify-center">
               <p className="xp-date relative w-full text-center mb-16 font-medium text-base text-secondery ">
                 2022 - Present
               </p>

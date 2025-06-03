@@ -2,7 +2,7 @@ import ProfileCard from "./profile-card";
 
 export default function Hero() {
   return (
-    <div className=" flex flex-col gap-4 lg:flex-row">
+    <div className=" flex flex-col gap-4 xl:flex-row">
       <div className="min-w-[340px]">
         <ProfileCard />
       </div>

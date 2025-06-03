@@ -26,7 +26,7 @@ export default function SectionWrapper({
           <h5 className="font-poppins font-light  text-sm">{title}</h5>
         </div>
         <div>
-          <h3 className="font-plusJakarta font-medium text-2xl md:text-3xl lg:text-4xl">
+          <h3 className="font-plusJakarta font-medium text-xl md:text-3xl lg:text-4xl">
             {subTitle}
           </h3>
         </div>

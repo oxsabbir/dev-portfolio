@@ -14,7 +14,7 @@ export default function ProfileCard() {
             height={280}
             quality={100}
             alt="profile-image"
-            className=" rounded-xl w-auto max-h-[340px] object-cover rounded-tr-none"
+            className=" rounded-md mx-auto  max-h-[340px] object-cover "
           />
 
           <div className=" flex flex-col items-center gap-3 ">
