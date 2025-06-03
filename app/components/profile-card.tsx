@@ -8,11 +8,11 @@ export default function ProfileCard() {
     <>
       <div className="lg:sticky top-0  bg-profileBgGradient bg-background  p-4 pb-0 ">
         <div className=" p-4 pb-0 flex flex-col gap-5">
-          <Image
-            src={profileImage}
+          <img
+            src={profileImage.src}
             width={280}
             height={280}
-            quality={100}
+            // quality={100}
             alt="profile-image"
             className=" rounded-md mx-auto  max-h-[340px] object-cover "
           />
