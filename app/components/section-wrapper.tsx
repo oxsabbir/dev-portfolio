@@ -22,8 +22,8 @@ export default function SectionWrapper({
     >
       <div className="flex flex-col gap-3 mb-6">
         <div className="px-4 py-2 rounded-3xl border flex items-center w-fit border-offWhite  gap-2">
-          <Icon strokeWidth={1.4} className="w-5 h-5" />
-          <h5 className="font-poppins font-light  text-sm">{title}</h5>
+          <Icon strokeWidth={1.5} className="w-5 h-5 sm:w-6 sm:h-6" />
+          <h5 className="font-poppins sm:text-base  text-sm">{title}</h5>
         </div>
         <div>
           <h3 className="font-plusJakarta font-medium text-xl md:text-3xl lg:text-4xl">
