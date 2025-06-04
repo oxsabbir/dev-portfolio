@@ -1,16 +1,5 @@
 import SectionWrapper from "./section-wrapper";
-
-import {
-  Clipboard,
-  ClipboardCheck,
-  Contact,
-  LocateIcon,
-  Mail,
-  MailIcon,
-  Map,
-  PhoneCall,
-} from "lucide-react";
-import Button from "./ui/Button";
+import { Contact, Mail, Map, PhoneCall } from "lucide-react";
 import CopyButton from "./extra/copy-button";
 
 export default function Contacts() {
@@ -34,7 +23,7 @@ export default function Contacts() {
           </div>
         </div>
 
-        <div className=" flex items-center gap-4 p-6 w-full rounded-lg border border-offWhite bg-cardGradient">
+        <div className=" flex items-center group gap-4 p-6 w-full rounded-lg border border-offWhite bg-cardGradient">
           <div className="flex items-center gap-4">
             <Mail className="w-8 h-8 text-secondery" />
           </div>
@@ -42,16 +31,21 @@ export default function Contacts() {
             <p className="text-lg">Email</p>
             <p className=" text-xl font-medium">sabbir2always@gmail.com</p>
           </div>
-          <div></div>
+          <div className="ml-auto hidden md:block opacity-0 group-hover:opacity-100 duration-200">
+            <CopyButton copyData="sabbir2always@gmail.com" />
+          </div>
         </div>
 
-        <div className=" flex items-center gap-4 p-6 w-full lg:col-span-2 rounded-lg border border-offWhite bg-cardGradient">
+        <div className=" flex items-center group gap-4 p-6 w-full lg:col-span-2 rounded-lg border border-offWhite bg-cardGradient">
           <div className="flex items-center gap-4">
             <Map className="w-8 h-8 text-secondery" />
           </div>
           <div>
             <p className="text-lg">Address</p>
             <p className=" text-xl font-medium">Pabna, Rajshahi, Bangladesh</p>
+          </div>
+          <div className="ml-auto hidden md:block opacity-0 group-hover:opacity-100 duration-200">
+            <CopyButton copyData="Pabna, Rajshahi, Bangladesh" />
           </div>
         </div>
       </div>

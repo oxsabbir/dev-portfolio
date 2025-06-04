@@ -6,10 +6,18 @@ import { useState } from "react";
 
 export default function CopyButton({ copyData }: { copyData: string }) {
   const [isCopied, setIsCopied] = useState<boolean>(false);
+  const copyhandler = function () {
+    if (!isCopied) {
+      setIsCopied(true);
+      window.navigator.clipboard.writeText(copyData);
+    } else {
+      setIsCopied(false);
+    }
+  };
 
   return (
     <Button
-      onClick={() => setIsCopied((prev) => !prev)}
+      onClick={copyhandler}
       size="sm"
       variant="secondery"
       className="!rounded-full !p-2 group hover:border-secondery"
