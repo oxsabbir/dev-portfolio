@@ -1,10 +1,10 @@
 type InputProps = {
   className?: string;
-} & React.InputHTMLAttributes<HTMLInputElement>;
+} & React.InputHTMLAttributes<HTMLTextAreaElement>;
 
-export default function Input({ className, ...rest }: InputProps) {
+export default function TextArea({ className, ...rest }: InputProps) {
   return (
-    <input
+    <textarea
       {...rest}
       className={`p-5 text-lg  bg-background border border-offWhite rounded-lg ${className} `}
     />

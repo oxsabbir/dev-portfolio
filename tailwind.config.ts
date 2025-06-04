@@ -28,6 +28,8 @@ export default {
       },
       screens: {
         xxl: "1320px",
+        "3xl": "1440px",
+        "4xl": "1536px",
       },
     },
   },

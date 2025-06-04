@@ -18,7 +18,7 @@ export default function SectionWrapper({
 }: SectionWrapperProps) {
   return (
     <section
-      className={`p-4 py-8  md:p-8 my-4 bg-seconderGradient bg-background ${className}`}
+      className={`p-4 py-8  md:p-14 md:px-8 lg:px-10 xl:px-14 my-4 bg-seconderGradient bg-background ${className}`}
     >
       <div className="flex flex-col gap-3 mb-6">
         <div className="px-4 py-2 rounded-3xl border flex items-center w-fit border-offWhite  gap-2">

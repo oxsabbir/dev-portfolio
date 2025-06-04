@@ -1,6 +1,7 @@
 import { ChevronRightIcon } from "lucide-react";
 import Button from "./ui/button";
 import Input from "./ui/input";
+import TextArea from "./ui/text-area";
 
 export default function ContactForm() {
   return (
@@ -11,7 +12,9 @@ export default function ContactForm() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 gap-y-6 mt-8 ">
         <Input placeholder="Full Name" />
         <Input placeholder="Email" />
-        <textarea className="md:col-span-2"></textarea>
+        <div className="md:col-span-2">
+          <TextArea placeholder="Write your message..." className="w-full" />
+        </div>
       </div>
       <div className="pt-8">
         <Button className="flex items-center gap-2 group justify-between">
