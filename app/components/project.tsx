@@ -8,30 +8,49 @@ import Image from "next/image";
 const data = [
   {
     id: 1,
-    title: "Placeholder App UI 1",
+    title: "ChatterSpace - Real-Time Messaging App",
     image: project2,
+    details:
+      "A real-time chat app with private & group messaging, read receipts, and user presence tracking.",
+    tech: ["Next.js", "Socket.io", "TypeScript", "Tailwind CSS", "MongoDB"],
   },
   {
     id: 2,
-    title: "Placeholder App UI 2",
+    title: "TourNest - Travel Booking Platform",
     image: project1,
+    details:
+      "A full-featured tour booking platform with dynamic maps, filters, and booking flow.",
+    tech: [
+      "Next.js",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mapbox",
+      "Tailwind CSS",
+    ],
   },
   {
     id: 3,
-    title: "Placeholder App UI 3",
+    title: "FlowSuite ERP - Business Management System",
     image: project2,
+    details:
+      "An internal ERP system for managing inventory, accounts, HR, and sales pipeline efficiently.",
+    tech: ["React.js", "Laravel", "MySQL", "Tailwind CSS", "Redux"],
   },
   {
     id: 4,
-    title: "Placeholder App UI 4",
+    title: "WaveBlast - WhatsApp Bulk Messaging Tool",
     image: project1,
+    details:
+      "A WhatsApp automation and bulk messaging app with CSV import and delivery reporting.",
+    tech: ["Electron", "React.js", "Node.js", "Puppeteer", "Tailwind CSS"],
   },
 ];
 
 export default function Project() {
   return (
     <SectionWrapper
-      subTitle="Explore porfolio by technology"
+      subTitle="Explore Porfolio by Technology"
       title="Project"
       icon={BriefcaseBusiness}
     >
@@ -58,7 +77,7 @@ export default function Project() {
         {data.map((project) => (
           <div
             key={project.id}
-            className=" bg-cardGradient rounded-md p-4 border border-offWhite"
+            className=" bg-cardGradient rounded-md p-4 flex flex-col gap-4 border border-offWhite"
           >
             <div className="transition-all duration-300 relative hover:scale-[1.01] group cursor-pointer">
               <Image
@@ -66,7 +85,7 @@ export default function Project() {
                 width={300}
                 height={200}
                 quality={100}
-                className="h-[200px] sm:h-[230px] md:h-[240px]  object-cover w-full rounded-lg shadow-md"
+                className="h-[240px]  object-cover w-full rounded-lg shadow-md"
                 src={project.image}
               />
               <div className="bg-secondery/30 w-full transition-all duration-200 opacity-0 flex group-hover:opacity-100 absolute h-full top-0 left-0 rounded-lg items-center justify-center">
@@ -76,11 +95,29 @@ export default function Project() {
               </div>
             </div>
 
-            <div className=" flex items-center justify-between mt-4">
-              <h4 className="text-base font-medium">{project.title}</h4>
+            <div className="flex flex-wrap gap-2 ">
+              {project.tech.map((tag) => (
+                <span
+                  key={tag}
+                  className="text-xs px-2 py-1 bg-[#222] rounded text-[#ccc]"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+
+            <div className=" flex items-center gap-2.5 mt-auto justify-between ">
+              <div className="flex gap-1 flex-col ">
+                <h4 className="text-lg font-medium line-clamp-1">
+                  {project.title}
+                </h4>
+                <p className="text-sm text-[#EAEAEA] line-clamp-2">
+                  {project.details}
+                </p>
+              </div>
               <Button
                 variant="secondery"
-                className="!rounded-full border group !border-offWhite !bg-cardGradient !p-1.5 px-1.5"
+                className="!rounded-full border group !border-offWhite !bg-cardGradient !p-2 px-2"
               >
                 <ArrowUpRight className="w-5 h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 duration-200 transition-all text-white/80" />
               </Button>

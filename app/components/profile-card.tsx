@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function ProfileCard() {
   return (
     <>
-      <div className="lg:sticky top-0  bg-profileBgGradient bg-background  p-4 pb-0 ">
+      <div className="lg:sticky top-0  bg-profileBgGradient h-full flex flex-col justify-between bg-background  p-4 pb-0 ">
         <div className=" p-4 pb-0 flex flex-col gap-5">
           <img
             src={profileImage.src}
@@ -14,12 +14,12 @@ export default function ProfileCard() {
             height={280}
             // quality={100}
             alt="profile-image"
-            className=" rounded-md mx-auto  max-h-[340px] object-cover "
+            className=" rounded-md mx-auto  max-h-[340px] object-cover"
           />
 
-          <div className=" flex flex-col items-center gap-3 ">
+          <div className=" flex flex-col items-center gap-3">
             <p className="text-secondery text-sm font-normal uppercase">
-              Software Engineer
+              Software Developer
             </p>
             <h4 className="font-semibold text-3xl">Sabbir Hossain</h4>
           </div>

@@ -1,9 +1,13 @@
 import ProfileCard from "./profile-card";
-
+{
+  /* <span className="px-4 my-1 -rotate-2 font-poppins inline-block rounded-[50px] font-medium bg-secondery text-background">
+  Fullstack
+</span>; */
+}
 export default function Hero() {
   return (
     <div className=" flex flex-col gap-4 xl:flex-row">
-      <div className="min-w-[340px]">
+      <div className="min-w-[340px] ">
         <ProfileCard />
       </div>
       <div className="md:p-14 px-10 py-10  flex-grow bg-background bg-heroBgGradient">
@@ -12,17 +16,19 @@ export default function Hero() {
         </h4>
         <div className="py-5">
           <h2 className="font-plusJakarta lg:text-5xl text-3xl leading-9 lg:leading-snug font-medium">
-            Senior Data Engineer and <br className="hidden lg:block" />{" "}
+            A problem solver building <br />
             <span className="px-4 my-1 -rotate-2 font-poppins inline-block rounded-[50px] font-medium bg-secondery text-background">
-              Data Scientist
+              Fullstack
             </span>{" "}
-            Based in <br /> California, Los Angeles.
+            apps that turn ideas <br />
+            into real-world solutions.
           </h2>
         </div>
         <p className="font-poppins smallText">
-          Have worked in a variety of positions, including key developer,
-          solution designer, and data architect. Strong engineering background
-          combined with closely working with business customers.
+          I specialize in building modern, scalable web applications using
+          JavaScript, React, Node.js, and more. I've worked on everything from
+          dynamic UIs to robust backend APIs, with a strong focus on
+          performance, clean architecture, and developer experience.
         </p>
         <div className="pt-8 flex lg:flex-row flex-wrap  gap-4 items-center justify-between">
           <div className=" flex items-center gap-2 lg:gap-4">

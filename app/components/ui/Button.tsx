@@ -28,7 +28,7 @@ const styles = {
   primary:
     "text-[#323232] text-base bg-secondery hover:border-[#323232] p-2 px-4",
   secondery:
-    "text-[#ffffffe7] text-base bg-[#ffffff09] hover:border-white p-2 px-4",
+    "text-[#ffffffe7] text-base bg-[#ffffff09] hover:border-secondery p-2 px-4",
   plain: "",
   sm: "text-sm p-1.5 px-2",
   md: "",
