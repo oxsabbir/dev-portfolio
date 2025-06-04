@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import { Briefcase } from "lucide-react";
 const arr = [1, 2, 3, 4, 5, 6, 8];
 import SectionWrapper from "./section-wrapper";
-import Button from "./ui/Button";
+import Button from "./ui/button";
 export default function Experiences() {
   return (
     <SectionWrapper

@@ -1,6 +1,6 @@
 import SectionWrapper from "./section-wrapper";
 import { ArrowUpRight, BriefcaseBusiness, Eye } from "lucide-react";
-import Button from "./ui/Button";
+import Button from "./ui/button";
 import project1 from "@/public/images/project_1.webp";
 import project2 from "@/public/images/project_2.webp";
 import Image from "next/image";

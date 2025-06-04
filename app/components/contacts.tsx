@@ -1,6 +1,7 @@
 import SectionWrapper from "./section-wrapper";
 import { Contact, Mail, Map, PhoneCall } from "lucide-react";
 import CopyButton from "./extra/copy-button";
+import ContactForm from "./contact-form";
 
 export default function Contacts() {
   return (
@@ -48,6 +49,9 @@ export default function Contacts() {
             <CopyButton copyData="Pabna, Rajshahi, Bangladesh" />
           </div>
         </div>
+      </div>
+      <div>
+        <ContactForm />
       </div>
     </SectionWrapper>
   );
