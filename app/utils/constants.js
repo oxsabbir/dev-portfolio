@@ -109,12 +109,6 @@ export const frontendTechStack = [
     color: "#CA4245",
     subtitle: "Routing Library for React",
   },
-  {
-    name: "Vite",
-    icon: SiVite,
-    color: "#646CFF",
-    subtitle: "Blazing Fast Frontend Build Tool",
-  },
 ];
 
 export const backendTechStack = [
@@ -127,7 +121,7 @@ export const backendTechStack = [
   {
     name: "Express.js",
     icon: SiExpress,
-    color: "#000000",
+    color: "#47A248",
     subtitle: "Minimalist Backend Framework for Node",
   },
   {
@@ -136,34 +130,34 @@ export const backendTechStack = [
     color: "#47A248",
     subtitle: "NoSQL Database",
   },
-  {
-    name: "Mongoose",
-    icon: SiMongoose,
-    color: "#880000",
-    subtitle: "MongoDB ODM for Node.js",
-  },
+  // {
+  //   name: "Mongoose",
+  //   icon: SiMongoose,
+  //   color: "#880000",
+  //   subtitle: "MongoDB ODM for Node.js",
+  // },
   {
     name: "PostgreSQL",
     icon: SiPostgresql,
     color: "#4169E1",
     subtitle: "Relational SQL Database",
   },
-  {
-    name: "Prisma",
-    icon: SiPrisma,
-    color: "#2D3748",
-    subtitle: "Type-safe ORM for SQL Databases",
-  },
-  {
-    name: "JWT (Auth)",
-    icon: SiJsonwebtokens,
-    color: "#000000",
-    subtitle: "Authentication Token Standard",
-  },
+  // {
+  //   name: "Prisma",
+  //   icon: SiPrisma,
+  //   color: "#2D3748",
+  //   subtitle: "Type-safe ORM for SQL Databases",
+  // },
+  // {
+  //   name: "JWT (Auth)",
+  //   icon: SiJsonwebtokens,
+  //   color: "#000000",
+  //   subtitle: "Authentication Token Standard",
+  // },
   {
     name: "Socket.io",
     icon: SiSocketdotio,
-    color: "#010101",
+    color: "#47A248",
     subtitle: "Real-time Web Communication Library",
   },
 ];
@@ -252,22 +246,22 @@ export const educationData = [
 export const navLinks = [
   {
     label: "About",
-    path: "/about",
+    path: "#home",
     icon: User,
   },
   {
     label: "Projects",
-    path: "/projects",
+    path: "#projects",
     icon: Briefcase,
   },
   {
     label: "Skills",
-    path: "/skills",
+    path: "#skills",
     icon: Dumbbell,
   },
   {
     label: "Services",
-    path: "/services",
+    path: "#services",
     icon: Workflow,
   },
 
@@ -283,7 +277,7 @@ export const navLinks = [
   // },
   {
     label: "Contact",
-    path: "/contact",
+    path: "#contact",
     icon: Contact,
   },
 ];

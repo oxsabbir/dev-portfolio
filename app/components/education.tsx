@@ -8,6 +8,7 @@ export default function Education() {
       icon={GraduationCap}
       title="Education"
       className="my-0"
+      id="education"
       subTitle="Academic Background"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

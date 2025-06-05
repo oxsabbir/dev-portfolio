@@ -7,9 +7,10 @@ export default function Contacts() {
   return (
     <footer>
       <SectionWrapper
-        title="Contacts"
+        title="Contact"
         subTitle="Let's Get In Touch"
         icon={Contact}
+        id="contact"
         className="!pb-0"
       >
         <div className=" grid grid-cols-1 gap-6 lg:grid-cols-2 ">

@@ -3,6 +3,7 @@ import { LucideIcon } from "lucide-react";
 
 type SectionWrapperProps = {
   title: string;
+  id?: string;
   subTitle: string;
   children: React.ReactNode;
   className?: string;
@@ -11,6 +12,7 @@ type SectionWrapperProps = {
 
 export default function SectionWrapper({
   title,
+  id,
   subTitle,
   children,
   className,
@@ -18,6 +20,7 @@ export default function SectionWrapper({
 }: SectionWrapperProps) {
   return (
     <section
+      id={id}
       className={`p-4 py-8  md:p-14 md:px-8 lg:px-10 xl:px-14 my-4 bg-seconderGradient bg-background ${className}`}
     >
       <div className="flex flex-col gap-3 mb-6">

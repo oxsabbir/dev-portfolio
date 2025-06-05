@@ -51,7 +51,8 @@ export default function Project() {
   return (
     <SectionWrapper
       subTitle="Explore Porfolio by Technology"
-      title="Project"
+      title="Projects"
+      id="projects"
       icon={BriefcaseBusiness}
     >
       <div className="overflow-x-auto pb-4">

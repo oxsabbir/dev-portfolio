@@ -13,6 +13,7 @@ export default function SkillSection() {
       title="Technical Skills"
       subTitle="Technologies"
       icon={CodeXml}
+      id="skills"
     >
       <ToolsCard
         title="Frontend"
@@ -20,7 +21,6 @@ export default function SkillSection() {
         toolsList={frontendTechStack}
       />
       <ToolsCard title="Backend" icon={Server} toolsList={backendTechStack} />
-      <ToolsCard title="Other tools" icon={Wrench} toolsList={toolsStack} />
     </SectionWrapper>
   );
 }

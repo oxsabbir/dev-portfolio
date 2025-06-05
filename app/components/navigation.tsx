@@ -11,9 +11,9 @@ export default function Navigation() {
         {navLinks.map((link) => (
           <li
             key={link.path}
-            className="hover:bg-white/5 transition-all duration-300 p-4 py-2 rounded-full"
+            className="hover:bg-white/5 cursor-pointer transition-all duration-300 p-4 py-2 rounded-full"
           >
-            <a href={link.path} className="flex items-center text-sm   gap-2">
+            <a href={link.path} className="flex items-center text-base  gap-2">
               {link.label}
             </a>
           </li>

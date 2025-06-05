@@ -1,12 +1,12 @@
 "use client";
 
-import { Swiper, SwiperSlide, useSwiper, useSwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
 import { Briefcase } from "lucide-react";
-const arr = [1, 2, 3, 4, 5, 6, 8];
+const arr = [1, 2];
 import SectionWrapper from "./section-wrapper";
 import Button from "./ui/button";
 export default function Experiences() {
@@ -14,6 +14,7 @@ export default function Experiences() {
     <SectionWrapper
       icon={Briefcase}
       title="Experince"
+      id="experience"
       subTitle="Work Experience"
     >
       <div className="mySwiper"></div>
@@ -30,10 +31,6 @@ export default function Experiences() {
           },
           1024: {
             slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          1280: {
-            slidesPerView: 3,
             spaceBetween: 20,
           },
         }}
