@@ -27,11 +27,23 @@ import {
   SiVercel,
   SiNetlify,
   SiPostgresql,
+  SiX,
 } from "@icons-pack/react-simple-icons";
 
-import { Github, Linkedin, Twitter } from "lucide-react";
+import {
+  Linkedin,
+  User,
+  BadgeCheck,
+  Hammer,
+  FolderKanban,
+  FileText,
+  Newspaper,
+  Mail,
+  UserPen,
+} from "lucide-react";
+
 export const socialLinks = [
-  { title: "github", link: "https://github.com/oxsabbir", icon: Github },
+  { title: "github", link: "https://github.com/oxsabbir", icon: SiGithub },
   {
     title: "linkedIn",
     link: "https://www.linkedin.com/in/oxsabbir",
@@ -40,7 +52,7 @@ export const socialLinks = [
   {
     title: "x",
     link: "https://x.com/sabbir2always",
-    icon: Twitter,
+    icon: SiX,
   },
 ];
 
@@ -230,5 +242,44 @@ export const educationData = [
     description:
       "Completed foundational education with a strong focus on science and mathematics. Built critical problem-solving skills and discipline that laid the groundwork for future technical studies.",
     tags: ["Science", "Mathematics", "Discipline", "Focus"],
+  },
+];
+
+export const navLinks = [
+  {
+    label: "About",
+    path: "/about",
+    icon: User,
+  },
+  {
+    label: "Projects",
+    path: "/projects",
+    icon: FolderKanban,
+  },
+  {
+    label: "Skills",
+    path: "/skills",
+    icon: BadgeCheck,
+  },
+  {
+    label: "Services",
+    path: "/services",
+    icon: Hammer,
+  },
+
+  // {
+  //   label: "Resume",
+  //   path: "/resume",
+  //   icon: FileText,
+  // },
+  // {
+  //   label: "Articles",
+  //   path: "/articles",
+  //   icon: Newspaper,
+  // },
+  {
+    label: "Contact",
+    path: "/contact",
+    icon: Mail,
   },
 ];

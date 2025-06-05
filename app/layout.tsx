@@ -32,7 +32,7 @@ export default function RootLayout({
         className={`${plustJakartaSans.variable} ${poppins.variable} antialiased`}
       >
         <div className="bodyGradient overflow-auto h-screen">
-          <div className="max-w-screen-xxl m-auto p-2">
+          <div className="max-w-screen-xxl 4xl:max-w-screen-3xl m-auto p-2">
             <div>{children}</div>
           </div>
         </div>
