@@ -40,6 +40,10 @@ import {
   Newspaper,
   Mail,
   UserPen,
+  Contact,
+  Briefcase,
+  Dumbbell,
+  Workflow,
 } from "lucide-react";
 
 export const socialLinks = [
@@ -254,17 +258,17 @@ export const navLinks = [
   {
     label: "Projects",
     path: "/projects",
-    icon: FolderKanban,
+    icon: Briefcase,
   },
   {
     label: "Skills",
     path: "/skills",
-    icon: BadgeCheck,
+    icon: Dumbbell,
   },
   {
     label: "Services",
     path: "/services",
-    icon: Hammer,
+    icon: Workflow,
   },
 
   // {
@@ -280,6 +284,6 @@ export const navLinks = [
   {
     label: "Contact",
     path: "/contact",
-    icon: Mail,
+    icon: Contact,
   },
 ];

@@ -1,11 +1,13 @@
 import Button from "./ui/button";
 import { navLinks } from "../utils/constants";
+import { Menu, X } from "lucide-react";
+import MobileMenu from "./mobile-menu";
 
 export default function Navigation() {
   return (
-    <nav className="px-4 py-3 flex items-center justify-between bg-heroBgGradient bg-background mb-3">
+    <nav className="px-4 py-3 flex items-center justify-between relative bg-heroBgGradient bg-background mb-3">
       <div>Logo here</div>
-      <ul className="flex items-center">
+      <ul className="items-center md:flex hidden">
         {navLinks.map((link) => (
           <li
             key={link.path}
@@ -17,10 +19,15 @@ export default function Navigation() {
           </li>
         ))}
       </ul>
-      <div>
-        <Button variant="secondery" size="sm" className="!rounded-full">
+      <div className="flex items-center">
+        <Button
+          variant="secondery"
+          size="sm"
+          className="!rounded-full hidden md:block"
+        >
           Hire Me
         </Button>
+        <MobileMenu />
       </div>
     </nav>
   );
