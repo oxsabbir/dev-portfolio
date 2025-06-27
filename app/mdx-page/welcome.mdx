@@ -1,0 +1,109 @@
+# 🧳 Dynamic Tour - Ultimate booking app
+
+![Hero Screenshot](./screenshots/wbsender_landing.jpg)
+
+Your all-in-one platform to explore, book, and manage unforgettable travel experiences! Whether you're chasing waterfalls or hunting auroras, Tour App makes travel simple and stylish.
+
+---
+
+## ✨ Features
+
+- 🌍 **Browse Tours** — Explore curated tours with stunning visuals and detailed info
+- 🔍 **Advanced Filters** — Sort by price, location, duration, and rating
+- 🗓️ **Real-Time Booking** — Secure your spot instantly with our seamless booking engine
+- 🧾 **User Dashboard** — Manage your bookings, reviews, and profile easily
+- 💳 **Stripe Payments** — Safe & secure transactions
+- 🧑‍💼 **Admin Panel** — Manage tours, users, reviews, and orders (for admins only)
+
+---
+
+## 📸 Screenshots
+
+### 🔍 Tour Listing Page
+
+![Tour Listing](./screenshots/tour-listing.png)
+
+### 🗺️ Tour Details Page
+
+![Tour Details](./screenshots/tour-details.png)
+
+### 👤 User Dashboard
+
+![User Dashboard](./screenshots/user-dashboard.png)
+
+### 🧑‍💼 Admin Panel
+
+![Admin Panel](./screenshots/admin-panel.png)
+
+---
+
+## ⚙️ Tech Stack
+
+**Frontend**
+
+- Next.js (App Router)
+- Tailwind CSS
+- TanStack Query / React Query
+
+**Backend**
+
+- Node.js
+- Express.js
+- REST API
+
+**Database**
+
+- MongoDB (Mongoose)
+
+**Authentication & Validation**
+
+- JWT (JSON Web Token)
+- Zod
+
+**Payments**
+
+- Stripe API
+
+---
+
+## 🔐 Authentication & Roles
+
+- **Public Users** – Browse and explore tours
+- **Authenticated Users** – Book tours, post reviews, manage profile
+- **Admin** – Create, update, and delete tours, view stats, manage users & reviews
+
+---
+
+## 🧠 Key Learnings
+
+- Built reusable components and clean modular structure
+- Implemented authentication + authorization with route protection
+- Used Stripe webhooks to handle real-time payment updates
+- Learned how to manage role-based dashboards (user/admin)
+- Focused on performance optimization with image lazy-loading, API caching, and SSR
+
+---
+
+## 🚀 Live Demo
+
+🔗 [View Live](https://your-tour-app-demo.vercel.app)  
+🔗 [API Docs](https://your-api-docs.com)
+
+---
+
+## 📦 Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/yourusername/tour-app.git
+cd tour-app
+
+# Install dependencies
+pnpm install
+
+# Setup .env file
+cp .env.example .env
+
+# Run the dev server
+pnpm dev
+```
