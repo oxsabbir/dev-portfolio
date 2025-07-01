@@ -1,9 +1,15 @@
 "use client";
+
+import { MDXProvider } from "@mdx-js/react";
 import Welcome from "@/app/mdx-page/welcome.mdx";
-export default function page() {
+import { useMDXComponents } from "@/mdx-component";
+
+export default function Page() {
   return (
-    <div className=" bg-background p-6 bg-heroBgGradient">
-      <Welcome />
+    <div className="bg-background p-6 bg-heroBgGradient">
+      <MDXProvider components={useMDXComponents({})}>
+        <Welcome />
+      </MDXProvider>
     </div>
   );
 }
