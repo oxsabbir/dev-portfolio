@@ -6,6 +6,12 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 
     h1: ({ children, ...props }) => (
       <h1
+        style={{
+          fontSize: "30px",
+          lineHeight: "36px",
+          fontWeight: 600,
+          paddingBottom: 20,
+        }}
         className="text-3xl font-bold text-gray-900 mb-8 leading-tight tracking-tight"
         {...props}
       >
@@ -15,7 +21,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 
     h2: ({ children, ...props }) => (
       <h2
-        className="text-4xl font-bold text-gray-800 mt-16 mb-6 leading-snug"
+        className="text-2xl font-semibold text-gray-800 mt-16 mb-6 leading-snug"
         {...props}
       >
         {children}
@@ -24,7 +30,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 
     h3: ({ children, ...props }) => (
       <h3
-        className="text-2xl font-semibold text-gray-700 mt-12 mb-4 leading-snug"
+        className="text-2xl font-medium  text-gray-700 mt-12 mb-4 leading-snug"
         {...props}
       >
         {children}
@@ -42,7 +48,8 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 
     ul: ({ children, ...props }) => (
       <ul
-        className="list-disc pl-6 text-gray-700 mb-6 space-y-3 leading-relaxed"
+        style={{ listStyleType: "disc", paddingLeft: "24px" }}
+        className=" text-gray-700 mb-6 space-y-3 leading-relaxed"
         {...props}
       >
         {children}
@@ -51,6 +58,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 
     ol: ({ children, ...props }) => (
       <ol
+        style={{ listStyleType: "decimal", paddingLeft: "24px" }}
         className="list-decimal pl-6 text-gray-700 mb-6 space-y-3 leading-relaxed"
         {...props}
       >
@@ -59,7 +67,8 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ),
     img: (props) => (
       <img
-        className="w-full max-w-full rounded-lg shadow-md py-6"
+        style={{ paddingTop: "16px" }}
+        className="w-full max-w-screen-xl rounded-lg  shadow-md"
         alt=""
         loading="lazy"
         {...props}
@@ -67,7 +76,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ),
 
     li: ({ children, ...props }) => (
-      <li className="ml-2" {...props}>
+      <li className="my-1" {...props}>
         {children}
       </li>
     ),
@@ -100,6 +109,11 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       </code>
     ),
 
+    strong: ({ children, ...props }) => (
+      <strong className="font-semibold" {...props}>
+        {children}
+      </strong>
+    ),
     pre: ({ children, ...props }) => (
       <pre
         className="bg-zinc-900 text-zinc-100 text-sm p-6 rounded-lg overflow-x-auto my-8 leading-relaxed font-mono"
