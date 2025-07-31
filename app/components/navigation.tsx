@@ -43,7 +43,7 @@ export default function Navigation() {
         >
           <div>
             <a href="/">
-              <img src={"./logo-dark.svg"} alt="logo" width={150} height={65} />
+              <img src={"/logo-dark.svg"} alt="logo" width={150} height={65} />
             </a>
           </div>
           <ul className="items-center md:flex hidden">

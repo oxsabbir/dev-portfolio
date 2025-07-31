@@ -11,18 +11,16 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "cdn.dribbble.com",
-        port: "", // Add this line
         pathname: "/**",
       },
       {
         protocol: "https",
         hostname: "picsum.photos",
-        port: "", // Add this too
         pathname: "/**",
       },
     ],
   },
-  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
+  pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
 };
 
 export default withMDX(nextConfig);

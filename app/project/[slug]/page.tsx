@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useMDXComponents } from "@/mdx-component";
 import { MDXProvider } from "@mdx-js/react";
 
-export default function Page({ params }: { params: { slug: string } }) {
+export default function Page({ params }: { params: Promise<any> }) {
   const [Content, setContent] = useState<React.ComponentType | null>(null);
   useEffect(() => {
     const init = async () => {
