@@ -1,11 +1,10 @@
 import Button from "./ui/button";
 import { navLinks } from "../utils/constants";
-import { Menu, X } from "lucide-react";
 import MobileMenu from "./mobile-menu";
 
 export default function Navigation() {
   return (
-    <nav className="px-4 py-3 flex items-center justify-between relative bg-heroBgGradient bg-background mb-3">
+    <nav className="px-4 py-3  flex items-center justify-between relative bg-heroBgGradient bg-[#000000af]  backdrop-blur-sm mb-3">
       <div>Logo here</div>
       <ul className="items-center md:flex hidden">
         {navLinks.map((link) => (
@@ -23,7 +22,7 @@ export default function Navigation() {
         <Button
           variant="secondery"
           size="sm"
-          className="!rounded-full hidden md:block"
+          className="!rounded-full  hidden md:block"
         >
           Hire Me
         </Button>

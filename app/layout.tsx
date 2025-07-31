@@ -34,9 +34,6 @@ export default function RootLayout({
       >
         <div className="bodyGradient h-screen">
           <div className="max-w-screen-xxl 4xl:max-w-screen-3xl m-auto p-2">
-            <header>
-              <Navigation />
-            </header>
             <div>{children}</div>
           </div>
         </div>

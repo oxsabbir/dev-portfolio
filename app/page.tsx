@@ -9,6 +9,9 @@ import Navigation from "./components/navigation";
 export default function Home() {
   return (
     <>
+      <header className="sticky top-0 z-40">
+        <Navigation />
+      </header>
       <main>
         <Hero />
         <SkillSection />
