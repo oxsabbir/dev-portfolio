@@ -4,6 +4,7 @@ import { navLinks } from "../utils/constants";
 import MobileMenu from "./mobile-menu";
 import { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
+import { Briefcase, CalendarCheck, Phone, PhoneCall } from "lucide-react";
 
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
@@ -37,10 +38,14 @@ export default function Navigation() {
         <nav
           className={clsx(
             "px-4 py-3  flex items-center justify-between duration-150 transition-all relative bg-heroBgGradient mb-3",
-            scrolled ? "bg-[#000000af]  backdrop-blur-sm" : "bg-background"
+            scrolled ? "bg-[#000000af]  backdrop-blur-md" : "bg-background"
           )}
         >
-          <div>Logo here</div>
+          <div>
+            <a href="/">
+              <img src={"./logo-dark.svg"} alt="logo" width={150} height={65} />
+            </a>
+          </div>
           <ul className="items-center md:flex hidden">
             {navLinks.map((link) => (
               <li
@@ -56,13 +61,14 @@ export default function Navigation() {
               </li>
             ))}
           </ul>
-          <div className="flex items-center">
+          <div className="flex justify-end">
             <Button
-              variant="secondery"
+              variant="primary"
               size="sm"
-              className="!rounded-full  hidden md:block"
+              className="!rounded-full  hidden md:flex  items-center gap-2"
             >
-              Hire Me
+              <CalendarCheck size={16} />
+              <span className="font-medium">Book a call</span>
             </Button>
             <MobileMenu />
           </div>
