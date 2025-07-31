@@ -7,7 +7,7 @@ import { projectContent } from "../data/project-content";
 export default function Project() {
   return (
     <SectionWrapper
-      subTitle="Explore Porfolio by Technology"
+      subTitle="Featured Works by Technology"
       title="Projects"
       id="projects"
       icon={BriefcaseBusiness}

@@ -9,15 +9,13 @@ import Navigation from "./components/navigation";
 export default function Home() {
   return (
     <>
-      <header className="sticky top-0 z-40">
-        <Navigation />
-      </header>
+      <Navigation />
       <main>
         <Hero />
-        <SkillSection />
-        <Experiences />
-        <Education />
         <Project />
+        <Experiences />
+        <SkillSection />
+        <Education />
         <Contacts />
       </main>
     </>
