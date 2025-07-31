@@ -7,12 +7,11 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h1: ({ children, ...props }) => (
       <h1
         style={{
-          fontSize: "30px",
           lineHeight: "36px",
           fontWeight: 600,
           paddingBottom: 20,
         }}
-        className="text-3xl font-bold text-gray-900 mb-8 leading-tight tracking-tight"
+        className="md:text-3xl text-2xl font-bold text-gray-900 mb-8 leading-tight tracking-tight"
         {...props}
       >
         {children}
@@ -21,7 +20,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 
     h2: ({ children, ...props }) => (
       <h2
-        className="text-2xl font-semibold text-gray-800 mt-16 mb-6 leading-snug"
+        className="text-xl md:text-2xl font-semibold text-gray-800 mt-16 mb-6 leading-snug"
         {...props}
       >
         {children}
@@ -30,13 +29,12 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 
     h3: ({ children, ...props }) => (
       <h3
-        className="text-2xl font-medium  text-gray-700 mt-12 mb-4 leading-snug"
+        className="text-xl font-medium  text-gray-700 py-1.5 leading-snug"
         {...props}
       >
         {children}
       </h3>
     ),
-
     p: ({ children, ...props }) => (
       <p
         className="text-lg leading-relaxed text-gray-700 mb-6 tracking-wide"
@@ -67,8 +65,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ),
     img: (props) => (
       <img
-        style={{ paddingTop: "16px" }}
-        className="w-full max-w-screen-xl rounded-lg  shadow-md"
+        className="w-full max-w-screen-xl py-2  shadow-md"
         alt=""
         loading="lazy"
         {...props}

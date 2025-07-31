@@ -1,18 +1,25 @@
 "use client";
 
-import { MDXProvider } from "@mdx-js/react";
+import React, { useEffect, useState } from "react";
 import { useMDXComponents } from "@/mdx-component";
-export default async function Page({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
-  const { slug } = await params;
-  console.log(slug);
-  const { default: Content } = await import(`@/app/content/${slug}.mdx`);
+import { MDXProvider } from "@mdx-js/react";
+
+export default function Page({ params }: { params: { slug: string } }) {
+  const [Content, setContent] = useState<React.ComponentType | null>(null);
+  useEffect(() => {
+    const init = async () => {
+      const paramsData = await params;
+      import(`@/app/content/${paramsData?.slug}.mdx`).then((mod) => {
+        setContent(() => mod.default);
+      });
+    };
+    init();
+  }, [params]);
+
+  if (!Content) return <div>Loading...</div>;
 
   return (
-    <div className="bg-background font-poppins p-6 md:p-10 py-0 bg-heroBgGradient">
+    <div className="bg-background font-poppins p-4 md:p-10 py-0 bg-heroBgGradient">
       <MDXProvider components={useMDXComponents({})}>
         <Content />
       </MDXProvider>
