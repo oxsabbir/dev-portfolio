@@ -6,18 +6,40 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import { Briefcase } from "lucide-react";
-const arr = [1, 2];
 import SectionWrapper from "./section-wrapper";
 import Button from "./ui/button";
+
+const experiences = [
+  {
+    date: "May 2024 – Present",
+    role: "Frontend Developer",
+    company: "Zippix.co",
+    location: "Remote",
+    description:
+      "Working as a frontend developer focused on building cross-platform apps using React Native and improving UI consistency across their web platforms.",
+    slug: "zippix",
+    tech: ["React Native", "TypeScript", "Tailwind", "Next.js"],
+  },
+  {
+    date: "Dec 2023 – Apr 2024",
+    role: "Frontend Developer",
+    company: "Smart Material Technology",
+    location: "Remote",
+    description:
+      "Worked with React and React Native to develop UI features and helped deliver a responsive, user-friendly dashboard interface.",
+    slug: "smart-material",
+    tech: ["React Native", "TypeScript", "Tailwind", "Next.js"],
+  },
+];
+
 export default function Experiences() {
   return (
     <SectionWrapper
       icon={Briefcase}
-      title="Experince"
+      title="Experience"
       id="experience"
       subTitle="Work Experience"
     >
-      <div className="mySwiper"></div>
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
@@ -36,29 +58,39 @@ export default function Experiences() {
         }}
         modules={[Pagination]}
       >
-        {arr.map((item) => (
-          <SwiperSlide key={item}>
+        {experiences.map((item, index) => (
+          <SwiperSlide key={index}>
             <div className="mb-12 xl cursor-grab p-6 rounded-lg flex flex-col items-center justify-center">
-              <p className="xp-date relative w-full text-center mb-16 font-medium text-base text-secondery ">
-                2022 - Present
+              <p className="xp-date relative w-full text-center mb-16 font-medium text-base text-secondery">
+                {item.date}
               </p>
-              <div className=" flex flex-col gap-3 justify-center items-cente text-center">
-                <h4 className="text-lg font-medium">Big Data Engineer</h4>
+              <div className="flex flex-col gap-3 justify-center items-center text-center">
+                <h4 className="text-lg font-medium">{item.role}</h4>
                 <p className="text-sm text-smGray uppercase">
-                  Los Angeles, Google
+                  {item.location}, {item.company}
                 </p>
                 <p className="text-sm font-normal text-smGray">
-                  3+ years of experience with big data/Hadoop and Cloud
-                  technologies – Spark, Hive, Flink, Presto, Snowflake, Map
-                  Reduce, YARN, Amazon AWS.
+                  {item.description}
                 </p>
-                <Button
-                  size="sm"
-                  variant="secondery"
-                  className="w-fit mx-auto !rounded-none mt-2"
-                >
-                  Details
-                </Button>
+                <div className="flex flex-wrap justify-center gap-2 mt-2">
+                  {item.tech.map((tech, i) => (
+                    <span
+                      key={i}
+                      className="bg-muted text-[12px] px-2 py-1 rounded-md text-primary"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <a href={`/experience/${item.slug}`}>
+                  <Button
+                    size="sm"
+                    variant="secondery"
+                    className="w-fit mx-auto !rounded-none mt-2"
+                  >
+                    Details
+                  </Button>
+                </a>
               </div>
             </div>
           </SwiperSlide>
