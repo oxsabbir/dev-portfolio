@@ -98,7 +98,7 @@ body {
 .gradientBorderCenter {
   border: 1px solid;
   border-bottom: 0;
-  border-right: 1;
+  border-right: 0;
   border-top: 0;
   border-image-slice: 1;
   border-width: 1px;
