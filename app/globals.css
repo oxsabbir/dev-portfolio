@@ -67,13 +67,10 @@ body {
 }
 
 .bodyGradient {
-  background: radial-gradient(
-    328px at 2.9% 15%,
-    rgb(191, 224, 251) 0%,
-    rgb(232, 233, 251) 25.8%,
-    rgb(252, 239, 250) 50.8%,
-    rgb(234, 251, 251) 77.6%,
-    rgb(240, 251, 244) 100.7%
+  background: linear-gradient(
+    178.6deg,
+    rgb(240, 208, 255) 11.8%,
+    rgb(212, 208, 230) 83.8%
   );
 }
 
@@ -139,10 +136,10 @@ body {
 }
 
 .smallTextUpperCase {
-  @apply text-sm font-light text-primary font-poppins;
+  @apply text-sm font-light text-foreground font-poppins;
 }
 .smallText {
-  @apply text-sm font-normal text-primary font-poppins;
+  @apply text-sm font-normal text-foreground font-poppins;
 }
 .sectionHeaderText {
   @apply text-5xl font-plusJakarta text-primary;
