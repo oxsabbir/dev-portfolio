@@ -76,7 +76,7 @@ export default function Experiences() {
                   {item.tech.map((tech, i) => (
                     <span
                       key={i}
-                      className="bg-muted text-[12px] px-2 py-1 rounded-md text-primary"
+                      className="bg-muted text-[12px] px-2 py-1 rounded-md dark:text-primary text-gray-900"
                     >
                       {tech}
                     </span>

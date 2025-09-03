@@ -24,10 +24,10 @@ export default function Education() {
               <h4 className=" text-lg  font-poppins font-medium">
                 {item.title}
               </h4>
-              <p className=" text-gray-700 dark:text-gray-400 text-base font-normal">
+              <p className=" text-gray-900 dark:text-gray-400 text-base font-normal">
                 {item.institution}
               </p>
-              <p className="font-normal text-base text-[#dbdbdb]">
+              <p className="font-normal text-base text-gray-600 dark:text-gray-400">
                 {item.description}
               </p>
             </div>
@@ -36,7 +36,7 @@ export default function Education() {
               {item.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="text-xs px-2 py-1 bg-[#222] rounded text-[#ccc]"
+                  className="text-xs px-2 py-1 bg-[#ccc] dark:bg-[#222] rounded dark:text-[#ccc] text-[#222]"
                 >
                   {tag}
                 </span>

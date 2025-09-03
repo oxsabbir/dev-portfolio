@@ -38,7 +38,9 @@ export default function Navigation() {
         <nav
           className={clsx(
             "px-4 py-3  flex items-center justify-between duration-150 transition-all relative bg-heroBgGradient mb-3",
-            scrolled ? "bg-[#000000af]  backdrop-blur-md" : "bg-background"
+            scrolled
+              ? "dark:bg-[#000000af] bg-[#ffffffaf] backdrop-blur-md"
+              : "bg-background"
           )}
         >
           <div>
