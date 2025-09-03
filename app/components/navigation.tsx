@@ -5,6 +5,7 @@ import MobileMenu from "./mobile-menu";
 import { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
 import { Briefcase, CalendarCheck, Phone, PhoneCall } from "lucide-react";
+import ToggleTheme from "./toggle-theme";
 
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
@@ -45,7 +46,20 @@ export default function Navigation() {
         >
           <div>
             <a href="/">
-              <img src={"/logo-dark.svg"} alt="logo" width={150} height={65} />
+              <img
+                src={"/logo-dark.svg"}
+                alt="logo"
+                width={150}
+                height={65}
+                className="hidden dark:block"
+              />
+              <img
+                src={"/logo-light.svg"}
+                alt="logo"
+                width={150}
+                height={65}
+                className="dark:hidden block"
+              />
             </a>
           </div>
           <ul className="items-center md:flex hidden">
@@ -64,6 +78,7 @@ export default function Navigation() {
             ))}
           </ul>
           <div className="flex justify-end">
+            <ToggleTheme />
             <Button
               variant="primary"
               size="sm"
