@@ -14,7 +14,7 @@ export default function Contacts() {
         className="!pb-0"
       >
         <div className=" grid grid-cols-1 gap-6 lg:grid-cols-2 ">
-          <div className=" flex items-center gap-4 group p-4 md:p-6 w-full rounded-lg border border-offWhite bg-cardGradient">
+          <div className=" flex items-center gap-4 group p-4 md:p-6 w-full rounded-lg border border-offBorder bg-cardGradient">
             <div className="flex items-center gap-4">
               <PhoneCall className="md:w-8 md:h-8 w-7 h-7 text-secondery" />
             </div>
@@ -27,7 +27,7 @@ export default function Contacts() {
             </div>
           </div>
 
-          <div className=" flex items-center group gap-4 p-4 md:p-6 w-full rounded-lg border border-offWhite bg-cardGradient">
+          <div className=" flex items-center group gap-4 p-4 md:p-6 w-full rounded-lg border border-offBorder bg-cardGradient">
             <div className="flex items-center gap-4">
               <Mail className="md:w-8 md:h-8 w-7 h-7 text-secondery" />
             </div>
@@ -42,7 +42,7 @@ export default function Contacts() {
             </div>
           </div>
 
-          <div className=" flex items-center group gap-4 p-4 md:p-6 w-full lg:col-span-2 rounded-lg border border-offWhite bg-cardGradient">
+          <div className=" flex items-center group gap-4 p-4 md:p-6 w-full lg:col-span-2 rounded-lg border border-offBorder bg-cardGradient">
             <div className="flex items-center gap-4">
               <Map className="md:w-8 md:h-8 w-7 h-7 text-secondery" />
             </div>

@@ -14,7 +14,7 @@ export default {
         primary: "#FFFFFF",
         secondery: "#78CC6D",
         smGray: "#EAEAEA",
-        offWhite: "#FFFFFF1F",
+        offBorder: "var(--border-primary)",
       },
       backgroundImage: {
         heroBgGradient: "var(--hero-bg-gradient)",

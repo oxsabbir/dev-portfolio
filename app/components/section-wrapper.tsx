@@ -24,7 +24,7 @@ export default function SectionWrapper({
       className={`p-4 py-8  md:p-14 md:px-8 lg:px-10 xl:px-14 my-4 bg-seconderGradient bg-background ${className}`}
     >
       <div className="flex flex-col gap-3 mb-6">
-        <div className="px-4 py-2 rounded-3xl border flex items-center w-fit border-offWhite  gap-2">
+        <div className="px-4 py-2 rounded-3xl border flex items-center w-fit border-offBorder gap-2">
           <Icon strokeWidth={1.5} className="w-5 h-5 sm:w-6 sm:h-6" />
           <h5 className="font-poppins sm:text-base  text-sm">{title}</h5>
         </div>

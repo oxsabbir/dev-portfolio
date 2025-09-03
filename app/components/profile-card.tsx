@@ -28,7 +28,7 @@ export default function ProfileCard() {
             {socialLinks.map((item) => (
               <a
                 key={item.title}
-                className=" p-2.5 border-offWhite border-2 rounded-2xl"
+                className=" p-2.5 border-offBorder border-2 rounded-2xl"
                 href={item.link}
               >
                 {<item.icon />}

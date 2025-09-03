@@ -35,7 +35,7 @@ export default function Project() {
         {projectContent.map((project) => (
           <div
             key={project.id}
-            className=" bg-cardGradient rounded-md p-4 flex flex-col gap-4 border border-offWhite"
+            className=" bg-cardGradient rounded-md p-4 flex flex-col gap-4 border border-offBorder"
           >
             <a href={`/project/${project.slug}`}>
               <div className="transition-all duration-300 relative hover:scale-[1.01] group cursor-pointer">
@@ -78,7 +78,7 @@ export default function Project() {
               <a href={`/project/${project.slug}`}>
                 <Button
                   variant="secondery"
-                  className="!rounded-full border group !border-offWhite !bg-cardGradient !p-2 px-2"
+                  className="!rounded-full border group !border-offBorder !bg-cardGradient !p-2 px-2"
                 >
                   <ArrowUpRight className="w-5 h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 duration-200 transition-all text-white/80" />
                 </Button>

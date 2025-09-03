@@ -66,10 +66,10 @@ export default function Experiences() {
               </p>
               <div className="flex flex-col gap-3 justify-center items-center text-center">
                 <h4 className="text-lg font-medium">{item.role}</h4>
-                <p className="text-sm text-smGray uppercase">
+                <p className="text-sm dark:text-smGray text-gray-800 uppercase">
                   {item.location}, {item.company}
                 </p>
-                <p className="text-sm font-normal text-smGray">
+                <p className="text-sm font-normal dark:text-smGray text-gray-800">
                   {item.description}
                 </p>
                 <div className="flex flex-wrap justify-center gap-2 mt-2">
@@ -85,8 +85,8 @@ export default function Experiences() {
                 <a href={`/experience/${item.slug}`}>
                   <Button
                     size="sm"
-                    variant="secondery"
-                    className="w-fit mx-auto !rounded-none mt-2"
+                    variant="primary"
+                    className="w-fit mx-auto text-base !rounded-none mt-2"
                   >
                     Details
                   </Button>

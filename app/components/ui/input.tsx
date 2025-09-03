@@ -6,7 +6,7 @@ export default function Input({ className, ...rest }: InputProps) {
   return (
     <input
       {...rest}
-      className={`md:p-5 p-4  text-lg  bg-background border border-offWhite rounded-lg ${className} `}
+      className={`md:p-5 p-4  text-lg  bg-background border border-offBorder rounded-lg ${className} `}
     />
   );
 }
