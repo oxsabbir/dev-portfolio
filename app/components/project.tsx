@@ -35,7 +35,7 @@ export default function Project() {
         {projectContent.map((project) => (
           <div
             key={project.id}
-            className=" bg-cardGradient rounded-md p-4 flex flex-col gap-4 border border-offBorder"
+            className="bg-cardGradient rounded-md p-4 flex flex-col gap-4 border border-offBorder"
           >
             <a href={`/project/${project.slug}`}>
               <div className="transition-all duration-300 relative hover:scale-[1.01] group cursor-pointer">
@@ -59,7 +59,7 @@ export default function Project() {
               {project.tech.map((tag) => (
                 <span
                   key={tag}
-                  className="text-xs px-2 py-1 bg-[#222] rounded text-[#ccc]"
+                  className="text-xs px-2 py-1 bg-[#ccc] dark:bg-[#222]  rounded text-[#222] dark:text-[#ccc] "
                 >
                   {tag}
                 </span>
@@ -71,7 +71,7 @@ export default function Project() {
                 <h4 className="text-lg font-medium line-clamp-1">
                   {project.title}
                 </h4>
-                <p className="text-sm text-[#EAEAEA] line-clamp-2">
+                <p className="text-sm text-gray-800 dark:text-gray-400 line-clamp-2">
                   {project.details}
                 </p>
               </div>
@@ -80,7 +80,7 @@ export default function Project() {
                   variant="secondery"
                   className="!rounded-full border group !border-offBorder !bg-cardGradient !p-2 px-2"
                 >
-                  <ArrowUpRight className="w-5 h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 duration-200 transition-all text-white/80" />
+                  <ArrowUpRight className="w-5 h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 duration-200 transition-all dark:text-white/80 text-black/80" />
                 </Button>
               </a>
             </div>

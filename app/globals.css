@@ -21,7 +21,7 @@
   --card-gradient: linear-gradient(
     65deg,
     rgba(0, 0, 0, 0) 2%,
-    rgba(0, 0, 0, 0.12) 20%
+    rgba(151, 151, 151, 0.12) 20%
   );
 
   --card-radial-gradient: radial-gradient(
