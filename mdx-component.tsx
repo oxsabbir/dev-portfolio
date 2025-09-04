@@ -11,7 +11,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
           fontWeight: 600,
           paddingBottom: 20,
         }}
-        className="md:text-3xl text-2xl font-bold text-gray-900 mb-8 leading-tight tracking-tight"
+        className="md:text-3xl text-2xl font-bold  mb-8 leading-tight tracking-tight"
         {...props}
       >
         {children}
@@ -20,7 +20,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 
     h2: ({ children, ...props }) => (
       <h2
-        className="text-xl md:text-2xl font-semibold text-gray-800 mt-16 mb-6 leading-snug"
+        className="text-xl md:text-2xl font-semibold  mt-16 mb-6 leading-snug"
         {...props}
       >
         {children}
@@ -28,18 +28,12 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ),
 
     h3: ({ children, ...props }) => (
-      <h3
-        className="text-xl font-medium  text-gray-700 py-1.5 leading-snug"
-        {...props}
-      >
+      <h3 className="text-xl font-medium   py-1.5 leading-snug" {...props}>
         {children}
       </h3>
     ),
     p: ({ children, ...props }) => (
-      <p
-        className="text-lg leading-relaxed text-gray-700 mb-6 tracking-wide"
-        {...props}
-      >
+      <p className="text-lg leading-relaxed  mb-6 tracking-wide" {...props}>
         {children}
       </p>
     ),
@@ -47,7 +41,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ul: ({ children, ...props }) => (
       <ul
         style={{ listStyleType: "disc", paddingLeft: "24px" }}
-        className=" text-gray-700 mb-6 space-y-3 leading-relaxed"
+        className="  mb-6 space-y-3 leading-relaxed"
         {...props}
       >
         {children}
@@ -57,7 +51,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ol: ({ children, ...props }) => (
       <ol
         style={{ listStyleType: "decimal", paddingLeft: "24px" }}
-        className="list-decimal pl-6 text-gray-700 mb-6 space-y-3 leading-relaxed"
+        className="list-decimal pl-6  mb-6 space-y-3 leading-relaxed"
         {...props}
       >
         {children}

@@ -6,12 +6,17 @@ export default function ToggleTheme() {
   const { theme, setTheme } = useTheme();
 
   useEffect(() => {
-    if (window && window.matchMedia("prefers-color-scheme : dark").matches) {
-      localStorage.setItem("theme", "dark");
-      setTheme("dark");
+    const saved = localStorage.getItem("theme");
+    if (saved && saved === "system") {
+      if (window && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        localStorage.setItem("theme", "dark");
+        setTheme("dark");
+      } else {
+        localStorage.setItem("theme", "light");
+        setTheme("light");
+      }
     } else {
-      localStorage.setItem("theme", "light");
-      setTheme("light");
+      setTheme(saved as string);
     }
   }, []);
 
