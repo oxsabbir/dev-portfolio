@@ -23,7 +23,7 @@ export default function Button({
         disable
           ? "opacity-60 hover:border-transparent cursor-not-allowed"
           : "opacity-100"
-      } cursor-pointer border border-transparent duration-200 transition-all ${
+      } cursor-pointer border border-transparent  duration-200 transition-all ${
         styles[size]
       } rounded-sm ${className}`}
       {...rest}
@@ -37,7 +37,7 @@ const styles = {
   primary:
     "text-[#323232] text-base bg-secondery hover:border-[#323232] p-2 px-4",
   secondery:
-    "text-[#ffffffe7] text-base bg-[#ffffff09] hover:border-white p-2 px-4",
+    "dark:text-[#ffffffe7] text-base dark:bg-[#ffffff09] text-gray-800 bg-[#00000009] hover:border-offBorder p-2 px-4",
   plain: "",
   sm: "text-sm p-1.5 px-2",
   md: "",
