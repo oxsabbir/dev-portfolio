@@ -1,10 +1,18 @@
-![Hero](/screenshots/wbsender_landing.jpg)
+import ImageSlider from "../components/extra/image-slider";
+import LinkButton from "../components/extra/link-button";
 
-# Dynamic Tour – The Ultimate Travel Booking Experience
+# Dynamic Travel – The Ultimate Travel Booking Experience
 
-**Dynamic Tour** is your all-in-one travel booking platform designed to make planning and managing trips effortless. From exploring bucket-list destinations to managing bookings and payments — everything is built to be seamless, fast, and modern.
+**Dynamic Travel** is your all-in-one travel booking platform designed to make planning and managing trips effortless. From exploring bucket-list destinations to managing bookings and payments — everything is built to be seamless, fast, and modern.
 
-Whether you're chasing waterfalls or northern lights, Dynamic Tour helps you get there in style. 🌍✈️
+<ImageSlider
+  images={[
+    "/screenshots/dynamic-tour/dynamic-tour-landing.png",
+    "/screenshots/dynamic-tour/dynamic-tour-dashboard.png",
+    "/screenshots/dynamic-tour/dynamic-tour-bookings.png",
+    "/screenshots/dynamic-tour/dynamic-tour-map.png",
+  ]}
+/>
 
 ## ✨ Features
 
@@ -14,20 +22,6 @@ Whether you're chasing waterfalls or northern lights, Dynamic Tour helps you get
 - 🧾 **User Dashboard** – Manage bookings, reviews, and personal info with ease
 - 💳 **Secure Payments** – Stripe-powered checkout for a smooth and secure experience
 - 🛠️ **Admin Panel** – Manage tours, users, and reviews (admin only)
-
-## 📸 UI Previews
-
-### 🔍 Tour Listings
-
-![Hero](/screenshots/tour-list.png)
-
-### 🗺️ Tour Details
-
-![Tour Details](/screenshots/tour-details.png)
-
-### 👤 User Dashboard
-
-![User Dashboard](/screenshots/user-profile.png)
 
 ## 🛠️ Tech Stack
 
@@ -55,6 +49,21 @@ Whether you're chasing waterfalls or northern lights, Dynamic Tour helps you get
 
 - **Stripe API** (with webhook support)
 
+### 🗺️ Interactive Map & Spot Management
+
+Admins can add new spots directly on the map, and users can explore them in real-time.
+
+<ImageSlider
+  images={[
+    "/screenshots/dynamic-tour/dynamic-tour-map.png",
+    "/screenshots/dynamic-tour/dynamic-tour-update-2.png",
+  ]}
+/>
+
+- Clickable map markers for each tour spot
+- Admins can add/edit/remove spots without touching code
+- Users see updated spots instantly thanks to React Query
+
 ## 🧠 Key Learnings
 
 - Modular and reusable components built with clean architecture
@@ -63,7 +72,22 @@ Whether you're chasing waterfalls or northern lights, Dynamic Tour helps you get
 - Lazy-loading images, SSR rendering, and query caching for speed
 - Dashboard segregation for users vs admins using clean layouts
 
-## 🚀 Live Demo
+## 🚀 Check It Out
 
-🔗 [**Live Site**](https://your-tour-app-demo.vercel.app)  
-🔗 [**API Docs**](https://your-api-docs.com)
+<div className="flex flex-wrap gap-4 mt-4">
+  <LinkButton
+    url="https://dynamic-travel.vercel.app/"
+    text="Live Site"
+    color="green"
+  />
+  <LinkButton
+    url="https://github.com/oxsabbir/dynamic-travel-client.git"
+    text="Client Repo"
+    color="blue"
+  />
+  <LinkButton
+    url="https://github.com/oxsabbir/dynamic-travel-server.git"
+    text="Server Repo"
+    color="yellow"
+  />
+</div>

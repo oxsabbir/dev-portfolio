@@ -20,7 +20,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 
     h2: ({ children, ...props }) => (
       <h2
-        className="text-xl md:text-2xl font-semibold  mt-16 mb-6 leading-snug"
+        className="text-xl md:text-2xl font-semibold  mt-10 mb-6 leading-snug"
         {...props}
       >
         {children}
@@ -59,7 +59,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ),
     img: (props) => (
       <img
-        className="w-full max-w-screen-xl py-2  shadow-md"
+        className="w-full max-w-screen-xl py-2"
         alt=""
         loading="lazy"
         {...props}
