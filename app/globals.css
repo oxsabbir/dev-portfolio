@@ -4,6 +4,7 @@
 :root {
   --background: #ffffff;
   --foreground: #0c0c0c;
+  --bg-home: #ebebeb;
 
   --hero-bg-gradient: linear-gradient(
     63deg,
@@ -37,6 +38,7 @@
 .dark {
   --background: #0c0c0c;
   --foreground: #ffffff;
+  --bg-home: #161616;
 
   --hero-bg-gradient: linear-gradient(
     63deg,
@@ -79,16 +81,29 @@ body {
   font-family: var(--font-poppins), var(--font-plus-jakarta-sans);
 }
 
+/* From Uiverse.io by kencode7 */
 .bodyGradient {
-  background: linear-gradient(
-    178.6deg,
-    rgb(240, 208, 255) 11.8%,
-    rgb(212, 208, 230) 83.8%
-  );
-}
-
-.whiteLowOpc {
-  color: #ffffff1f;
+  background: radial-gradient(
+      ellipse 170% 100% at 70% 20%,
+      rgba(255, 20, 145, 0.397),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse 140% 85% at 30% 10%,
+      rgba(0, 255, 255, 0.404),
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 90% 70% at 50% 0%,
+      rgba(137, 43, 226, 0.432),
+      transparent 65%
+    ),
+    radial-gradient(
+      ellipse 110% 50% at 80% 30%,
+      rgba(255, 217, 0, 0.192),
+      transparent 40%
+    ),
+    var(--bg-home);
 }
 
 .gradientBorderTop {

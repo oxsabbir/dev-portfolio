@@ -8,12 +8,11 @@ import NotFound from "@/app/components/extra/not-found";
 
 export default function Page({ params }: { params: Promise<any> }) {
   const [Content, setContent] = useState<React.ComponentType | null>(null);
-  const [loading, setLoading] = useState<Boolean>(false);
+  const [loading, setLoading] = useState<Boolean>(true);
 
   useEffect(() => {
     const init = async () => {
       const paramsData = await params;
-      setLoading(true);
       import(`@/app/content/${paramsData?.slug}.mdx`)
         .then((mod) => {
           setContent(() => mod.default);
