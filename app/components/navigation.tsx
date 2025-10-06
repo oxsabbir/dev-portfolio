@@ -13,7 +13,6 @@ export default function Navigation() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        console.log();
         if (!entry.isIntersecting) {
           setScrolled(true);
         } else {
