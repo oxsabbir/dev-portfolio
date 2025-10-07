@@ -20,7 +20,7 @@ export default function Contacts() {
             </div>
             <div>
               <p className="md:text-lg text-base">Phone</p>
-              <p className=" md:text-xl text-lg font-medium">8801902317010</p>
+              <p className=" md:text-xl text-lg font-normal">8801902317010</p>
             </div>
             <div className="ml-auto hidden md:block opacity-0 group-hover:opacity-100 duration-200">
               <CopyButton copyData="+8801902317010" />
@@ -33,7 +33,7 @@ export default function Contacts() {
             </div>
             <div>
               <p className="md:text-lg text-base">Email</p>
-              <p className=" md:text-xl text-lg font-medium">
+              <p className=" md:text-xl text-lg font-normal">
                 sabbir2always@gmail.com
               </p>
             </div>
@@ -48,7 +48,7 @@ export default function Contacts() {
             </div>
             <div>
               <p className="md:text-lg text-base">Address</p>
-              <p className=" md:text-xl text-lg font-medium">
+              <p className=" md:text-xl text-lg font-normal">
                 Pabna, Rajshahi, Bangladesh
               </p>
             </div>

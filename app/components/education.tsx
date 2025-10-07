@@ -15,19 +15,19 @@ export default function Education() {
         {educationData.map((item, i) => (
           <div
             key={i}
-            className="bg-background bg-cardGradient transition-all duration-300 hover:scale-[1.01] flex flex-col justify-between hover:shadow-md p-8 rounded-lg border border-offBorder"
+            className="bg-background bg-cardGradient transition-all duration-300 hover:scale-[1.01] flex flex-col justify-between hover:shadow-md p-6 md:p-8 rounded-lg border border-offBorder"
           >
             <div className=" flex flex-col gap-2 mb-3">
               <p className="py-1 p-2 text-gray-600 dark:text-gray-400 border border-offBorder text-sm font-poppins rounded-md w-fit">
                 {item.duration}
               </p>
-              <h4 className=" text-lg  font-poppins font-medium">
+              <h4 className="text-lg  font-poppins font-medium">
                 {item.title}
               </h4>
               <p className=" text-gray-900 dark:text-gray-400 text-base font-normal">
                 {item.institution}
               </p>
-              <p className="font-normal text-base text-gray-600 dark:text-gray-400">
+              <p className="font-normal py-2 text-base text-gray-600 dark:text-gray-400">
                 {item.description}
               </p>
             </div>

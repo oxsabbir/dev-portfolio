@@ -15,8 +15,8 @@ export default function Hero() {
           Hello I'm <span className="text-secondery">Sabbir Hossain</span>
         </h4>
         <div className="py-5">
-          <h2 className="font-plusJakarta lg:text-5xl text-3xl leading-9 lg:leading-snug font-medium">
-            A problem solver building <br />
+          <h2 className="font-plusJakarta lg:text-5xl text-3xl leading-10 lg:leading-snug font-medium">
+            A problem solver building <br className="hidden md:block" />
             <span className="px-4 my-1 -rotate-2 font-poppins inline-block rounded-[50px] font-medium bg-secondery text-background">
               Fullstack
             </span>{" "}
@@ -24,7 +24,7 @@ export default function Hero() {
             into real-world solutions.
           </h2>
         </div>
-        <p className="font-poppins smallText">
+        <p className="smallText">
           I specialize in building modern, scalable web applications using
           JavaScript, React, Node.js, and more. I've worked on everything from
           dynamic UIs to robust backend APIs, with a strong focus on
@@ -32,7 +32,7 @@ export default function Hero() {
         </p>
         <div className="pt-8 flex lg:flex-row flex-wrap  gap-4 items-center justify-between">
           <div className=" flex items-center gap-2 lg:gap-4">
-            <h3 className="font-plusJakarta text-5xl lg:text-6xl">20</h3>
+            <h3 className="font-plusJakarta text-5xl lg:text-6xl">12</h3>
 
             <div className=" flex-col flex gap-0 lg:gap-1">
               <p className="smallText">Completed</p>
@@ -48,11 +48,11 @@ export default function Hero() {
             </div>
           </div>
           <div className=" flex items-center gap-2 lg:gap-4">
-            <h3 className="font-plusJakarta text-5xl lg:text-6xl">230</h3>
+            <h3 className="font-plusJakarta text-5xl lg:text-6xl">05</h3>
 
             <div className=" flex-col flex gap-0 lg:gap-1">
-              <p className="smallText">Problems</p>
-              <p className="smallText">Solved</p>
+              <p className="smallText">Live</p>
+              <p className="smallText">Product</p>
             </div>
           </div>
         </div>
