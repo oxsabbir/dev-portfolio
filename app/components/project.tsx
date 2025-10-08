@@ -31,7 +31,7 @@ export default function Project() {
           </Button>
         </div>
       </div>
-      <div className="grid grid-cols-1 mt-3 md:grid-cols-2 xl:grid-cols-3 gap-4 0">
+      <div className="grid grid-cols-1 mt-3 md:grid-cols-2 xl:grid-cols-3  gap-6">
         {projectContent.map((project) => (
           <div
             key={project.id}
@@ -44,7 +44,7 @@ export default function Project() {
                   width={300}
                   height={200}
                   quality={100}
-                  className="h-[240px]  object-cover w-full rounded-lg shadow-md"
+                  className="min-h-[250px] object-top  w-full rounded-lg shadow-md"
                   src={project.image}
                 />
                 <div className="bg-secondery/30 w-full transition-all duration-200 opacity-0 flex group-hover:opacity-100 absolute h-full top-0 left-0 rounded-lg items-center justify-center">
