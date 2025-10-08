@@ -27,7 +27,7 @@ export default function Page({ params }: { params: Promise<any> }) {
   if (!Content) return <NotFound />;
 
   return (
-    <div className="bg-background font-poppins p-4 md:p-10 py-0 bg-heroBgGradient">
+    <div className="bg-background font-poppins p-4 py-8 md:p-10  bg-heroBgGradient">
       <MDXProvider components={useMDXComponents({})}>
         <Content />
       </MDXProvider>

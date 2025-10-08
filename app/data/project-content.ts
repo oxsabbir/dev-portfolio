@@ -1,5 +1,5 @@
-import proSaveLanding from "@/public/images/property-save-landing.png";
-import dynamicTour from "@/public/images/dynamic-tour-landing.png";
+import proSaveLanding from "@/public/screenshots/pro-save/property-save-landing.png";
+import dynamicTour from "@/public/screenshots/dynamic-tour/dynamic-tour-landing.png";
 
 export const projectContent = [
   {
@@ -9,7 +9,7 @@ export const projectContent = [
     details:
       "A real-time chat app with private & group messaging, read receipts, and user presence tracking.",
     tech: ["Next.js", "Socket.io", "TypeScript", "Tailwind CSS", "MongoDB"],
-    slug: "dynamic-chat",
+    slug: "pro-save-landing",
   },
   {
     id: 2,

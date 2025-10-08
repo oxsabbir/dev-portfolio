@@ -24,11 +24,11 @@ export default function ToggleTheme() {
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
+
   return (
     <div className="px-3 flex items-center">
       <button onClick={toggleTheme} className=" p-1.5 rounded-full">
-        {theme === "light" && <MoonIcon size={20} />}
-        {theme === "dark" && <Sun size={20} />}
+        {theme === "light" ? <MoonIcon size={20} /> : <Sun size={20} />}
       </button>
     </div>
   );

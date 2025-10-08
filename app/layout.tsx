@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Poppins } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./context/Provider";
+import Navigation from "./components/navigation";
 
 const plustJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
@@ -34,7 +35,7 @@ export default function RootLayout({
       >
         <Providers>
           <div className="bodyGradient  h-screen overflow-auto">
-            <div className="max-w-screen-xxl 4xl:max-w-screen-3xl m-auto p-2">
+            <div className="max-w-screen-xxl 4xl:max-w-screen-3xl m-auto md:p-2">
               <div>{children}</div>
             </div>
           </div>
