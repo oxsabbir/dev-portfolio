@@ -1,14 +1,14 @@
-import proSaveLanding from "@/public/screenshots/pro-save/property-save-landing.png";
+import proSaveLanding from "@/public/screenshots/pro-save/pro-save-landing.png";
 import dynamicTour from "@/public/screenshots/dynamic-tour/dynamic-tour-landing.png";
 
 export const projectContent = [
   {
     id: 1,
-    title: "Dynamic Chat - Real-Time Messaging App",
+    title: "Prosave Landing – Real Estate Analytics Platform",
     image: proSaveLanding,
     details:
-      "A real-time chat app with private & group messaging, read receipts, and user presence tracking.",
-    tech: ["Next.js", "Socket.io", "TypeScript", "Tailwind CSS", "MongoDB"],
+      "Built a sleek and fully responsive landing page for a modern real estate analytics tool. Designed with smooth animations, theme switching, and internationalization support for a global audience.",
+    tech: ["Next.js", "React", "Framer Motion", "Tailwind CSS", "next-intl"],
     slug: "pro-save-landing",
   },
   {

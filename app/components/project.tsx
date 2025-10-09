@@ -39,13 +39,12 @@ export default function Project() {
           >
             <a href={`/project/${project.slug}`}>
               <div className="transition-all duration-300 relative hover:scale-[1.01] group cursor-pointer">
-                <Image
+                <img
                   alt={project.title}
                   width={300}
                   height={200}
-                  quality={100}
-                  className="min-h-[250px] object-top  w-full rounded-lg shadow-md"
-                  src={project.image}
+                  className="min-h-[230px] object-top w-full rounded-lg shadow-md"
+                  src={project.image.src}
                 />
                 <div className="bg-secondery/30 w-full transition-all duration-200 opacity-0 flex group-hover:opacity-100 absolute h-full top-0 left-0 rounded-lg items-center justify-center">
                   <div className=" rounded-full p-3 bg-black/50 bg-cardGradient w-fit">
@@ -68,10 +67,10 @@ export default function Project() {
 
             <div className=" flex items-center gap-2.5 mt-auto justify-between ">
               <div className="flex gap-1 flex-col ">
-                <h4 className="text-lg font-medium line-clamp-1">
+                <h4 className="text-lg font-medium line-clamp-2 mb-2">
                   {project.title}
                 </h4>
-                <p className="text-sm text-gray-800 dark:text-gray-400 line-clamp-2">
+                <p className="text-sm text-gray-800 dark:text-gray-400 line-clamp-3">
                   {project.details}
                 </p>
               </div>
