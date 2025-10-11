@@ -79,7 +79,7 @@ export default function Navigation() {
           <div className="flex justify-end">
             <ToggleTheme />
             <Button
-              variant="primary"
+              variant="shiny"
               size="sm"
               className="!rounded-full  hidden md:flex  items-center gap-2"
             >
