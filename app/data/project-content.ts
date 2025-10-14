@@ -91,3 +91,14 @@ export const projectContent = [
     slug: "wb-sender",
   },
 ];
+
+export const technololgyList = [
+  "All",
+  "React",
+  "Next.Js",
+  "Node",
+  "Express",
+  "Web-Socket",
+  "React Native",
+  "Framer Motion",
+];

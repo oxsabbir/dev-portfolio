@@ -4,14 +4,22 @@ import SectionWrapper from "./section-wrapper";
 import { ArrowUpRight, BriefcaseBusiness, Eye } from "lucide-react";
 import Button from "./ui/button";
 import Image from "next/image";
-import { projectContent } from "../data/project-content";
+import { projectContent, technololgyList } from "../data/project-content";
+
 import { useState } from "react";
 
 export default function Project() {
+  const [category, setCategory] = useState<string>("All");
   const [projectList, setProjectList] = useState(projectContent.slice(0, 6));
   const [hasMore, setHasMore] = useState(false);
 
-  const seeMoreHandler = () => {};
+  const seeMoreHandler = () => {
+    setProjectList;
+  };
+
+  const changeCategoryHandler = (selectedCategory: string) => {
+    setCategory(selectedCategory);
+  };
 
   return (
     <SectionWrapper
@@ -22,21 +30,17 @@ export default function Project() {
     >
       <div className="overflow-x-auto pb-4">
         <div className="flex items-center gap-3 ">
-          <Button size="sm" variant="primary">
-            All
-          </Button>
-          <Button size="sm" variant="secondery">
-            React
-          </Button>
-          <Button size="sm" variant="secondery">
-            Next
-          </Button>
-          <Button size="sm" variant="secondery">
-            Node
-          </Button>
-          <Button size="sm" variant="secondery">
-            Express
-          </Button>
+          {technololgyList.map((technology, i) => (
+            <Button
+              onClick={() => setCategory(technology)}
+              key={i}
+              value={technology}
+              size="sm"
+              variant={technology === category ? "primary" : "secondery"}
+            >
+              {technology}
+            </Button>
+          ))}
         </div>
       </div>
       <div className="grid grid-cols-1 mt-3 md:grid-cols-2 xl:grid-cols-3  gap-6">
