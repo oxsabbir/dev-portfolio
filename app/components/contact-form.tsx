@@ -17,7 +17,10 @@ export default function ContactForm() {
         </div>
       </div>
       <div className="pt-8">
-        <Button className="flex items-center gap-2 group justify-between">
+        <Button
+          variant="shiny"
+          className="flex items-center gap-2 group justify-between"
+        >
           Send Message
           <ChevronRightIcon className="w-4 h-4 duration-200 group-hover:translate-x-1.5 " />
         </Button>
