@@ -6,19 +6,27 @@ import Button from "./ui/button";
 import Image from "next/image";
 import { projectContent, technololgyList } from "../data/project-content";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Project() {
   const [category, setCategory] = useState<string>("All");
   const [projectList, setProjectList] = useState(projectContent.slice(0, 6));
   const [hasMore, setHasMore] = useState(false);
 
+  useEffect(() => {
+    if (category === "All") {
+      setProjectList(projectContent);
+      return;
+    } else {
+      const filteredProject = projectContent.filter((project) =>
+        project.tech.includes(category)
+      );
+      setProjectList(filteredProject);
+    }
+  }, [category]);
+
   const seeMoreHandler = () => {
     setProjectList;
-  };
-
-  const changeCategoryHandler = (selectedCategory: string) => {
-    setCategory(selectedCategory);
   };
 
   return (
