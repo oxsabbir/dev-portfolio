@@ -1,10 +1,18 @@
+"use client";
+
 import SectionWrapper from "./section-wrapper";
 import { ArrowUpRight, BriefcaseBusiness, Eye } from "lucide-react";
 import Button from "./ui/button";
 import Image from "next/image";
 import { projectContent } from "../data/project-content";
+import { useState } from "react";
 
 export default function Project() {
+  const [projectList, setProjectList] = useState(projectContent.slice(0, 6));
+  const [hasMore, setHasMore] = useState(false);
+
+  const seeMoreHandler = () => {};
+
   return (
     <SectionWrapper
       subTitle="Featured Works by Technology"
@@ -32,7 +40,7 @@ export default function Project() {
         </div>
       </div>
       <div className="grid grid-cols-1 mt-3 md:grid-cols-2 xl:grid-cols-3  gap-6">
-        {projectContent.map((project) => (
+        {projectList.map((project) => (
           <div
             key={project.id}
             className="bg-cardGradient rounded-md p-4 flex flex-col gap-4 border border-offBorder"
@@ -85,6 +93,18 @@ export default function Project() {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="mt-8 flex justify-center">
+        {hasMore ? (
+          <Button size="sm" variant="primary">
+            See more
+          </Button>
+        ) : (
+          <p className="text-sm  text-gray-600 dark:text-gray-400">
+            No more left
+          </p>
+        )}
       </div>
     </SectionWrapper>
   );
