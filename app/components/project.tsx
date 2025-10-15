@@ -53,18 +53,19 @@ export default function Project() {
       id="projects"
       icon={BriefcaseBusiness}
     >
-      <div className="overflow-x-auto pb-4">
-        <div className="flex items-center gap-3 ">
+      <div className="pb-4 overflow-x-auto">
+        <div className="flex  flex-nowrap items-center  0 gap-3 ">
           {technololgyList.map((technology, i) => (
-            <Button
-              onClick={() => setCategory(technology)}
-              key={i}
-              value={technology}
-              size="sm"
-              variant={technology === category ? "primary" : "secondery"}
-            >
-              {technology}
-            </Button>
+            <div key={i} className=" flex-shrink-0">
+              <Button
+                onClick={() => setCategory(technology)}
+                value={technology}
+                size="sm"
+                variant={technology === category ? "primary" : "secondery"}
+              >
+                {technology}
+              </Button>
+            </div>
           ))}
         </div>
       </div>

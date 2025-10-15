@@ -48,7 +48,10 @@ export default function MobileMenu() {
                 key={link.path}
                 className="hover:bg-white/5 transition-all duration-300 p-4 border-b border-offBorder"
               >
-                <a href={"#"} className="flex items-center text-sm  gap-4">
+                <a
+                  href={link.path}
+                  className="flex items-center text-sm  gap-4"
+                >
                   <link.icon className="w-6 h-6" strokeWidth={1.8} />
                   {link.label}
                 </a>
