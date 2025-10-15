@@ -17,7 +17,6 @@ export default function InviewBlur({
       initial={{ filter: "blur(5px)", opacity: 0 }}
       animate={isInView ? { filter: "blur(0px)", opacity: 1 } : {}}
       transition={{ duration: 0.7 }}
-      className="font-plusJakarta font-medium text-xl md:text-3xl lg:text-4xl"
     >
       {children}
     </motion.div>

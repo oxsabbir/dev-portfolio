@@ -1,12 +1,12 @@
 "use client";
 
-import SectionWrapper from "./section-wrapper";
-import { ArrowUpRight, BriefcaseBusiness, Eye } from "lucide-react";
-import Button from "./ui/button";
-import Image from "next/image";
-import { projectContent, technololgyList } from "../data/project-content";
-
 import { useEffect, useState } from "react";
+import Button from "./ui/button";
+import { ArrowUpRight, BriefcaseBusiness } from "lucide-react";
+import SectionWrapper from "./section-wrapper";
+import { useInView } from "motion/react";
+import SwipeIn from "./effect/swipe-in";
+import { projectContent, technololgyList } from "../data/project-content";
 
 export default function Project() {
   const [category, setCategory] = useState<string>("All");
@@ -46,6 +46,8 @@ export default function Project() {
     }
   };
 
+  // inView animation
+
   return (
     <SectionWrapper
       subTitle="Featured Works by Technology"
@@ -71,9 +73,9 @@ export default function Project() {
       </div>
       <div className="grid grid-cols-1 mt-3 md:grid-cols-2 xl:grid-cols-3  gap-6">
         {projectList.map((project) => (
-          <div
-            key={project.id}
+          <SwipeIn
             className="bg-cardGradient rounded-md p-4 flex flex-col gap-4 border border-offBorder"
+            key={project.id}
           >
             <a href={`/project/${project.slug}`}>
               <div className="transition-all duration-300 relative hover:scale-[1.01] group cursor-pointer">
@@ -121,7 +123,7 @@ export default function Project() {
                 </Button>
               </a>
             </div>
-          </div>
+          </SwipeIn>
         ))}
       </div>
 
