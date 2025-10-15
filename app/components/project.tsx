@@ -11,7 +11,9 @@ import { useEffect, useState } from "react";
 export default function Project() {
   const [category, setCategory] = useState<string>("All");
   const [projectList, setProjectList] = useState(projectContent.slice(0, 6));
-  const [hasMore, setHasMore] = useState(false);
+  const [hasMore, setHasMore] = useState(
+    projectList.length < projectContent.length
+  );
 
   useEffect(() => {
     if (category === "All") {
@@ -19,21 +21,29 @@ export default function Project() {
       return;
     } else {
       const filteredProject = projectContent.filter((project) =>
-        project.tech.includes(category)
+        project.tech.some(
+          (tech) => tech.toLocaleLowerCase() === category.toLowerCase()
+        )
       );
       setProjectList(filteredProject);
     }
   }, [category]);
 
   const seeMoreHandler = () => {
-    // add next six to the list
+    const moreCount = 6;
+    // adding next six to the list
     const moreProject = projectContent.slice(
       projectList.length,
-      projectList.length + 2
+      projectList.length + moreCount
     );
     setProjectList((prev) => [...prev, ...moreProject]);
 
-    // check if more exist
+    // checking if more pr exist
+    if (projectContent.length > projectList.length + moreCount) {
+      setHasMore(true);
+    } else {
+      setHasMore(false);
+    }
   };
 
   return (

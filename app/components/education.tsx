@@ -1,6 +1,6 @@
 import { GraduationCap } from "lucide-react";
 import { educationData } from "../utils/constants";
-import InviewBlur from "./inview-blur";
+import InviewBlur from "./effect/inview-blur";
 
 import SectionWrapper from "./section-wrapper";
 export default function Education() {

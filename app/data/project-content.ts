@@ -96,7 +96,7 @@ export const technololgyList = [
   "All",
   "React",
   "Next.Js",
-  "Node",
+  "Node.Js",
   "Express",
   "Web-Socket",
   "React Native",
