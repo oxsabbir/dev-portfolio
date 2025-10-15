@@ -15,7 +15,7 @@ export default function Project() {
 
   useEffect(() => {
     if (category === "All") {
-      setProjectList(projectContent);
+      setProjectList(projectContent.slice(0, 6));
       return;
     } else {
       const filteredProject = projectContent.filter((project) =>
@@ -26,7 +26,14 @@ export default function Project() {
   }, [category]);
 
   const seeMoreHandler = () => {
-    setProjectList;
+    // add next six to the list
+    const moreProject = projectContent.slice(
+      projectList.length,
+      projectList.length + 2
+    );
+    setProjectList((prev) => [...prev, ...moreProject]);
+
+    // check if more exist
   };
 
   return (
@@ -109,7 +116,7 @@ export default function Project() {
 
       <div className="mt-8 flex justify-center">
         {hasMore ? (
-          <Button size="sm" variant="primary">
+          <Button onClick={seeMoreHandler} size="sm" variant="primary">
             See more
           </Button>
         ) : (
