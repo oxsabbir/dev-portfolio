@@ -1,6 +1,7 @@
 import proSaveLanding from "@/public/screenshots/pro-save/pro-save-landing.png";
 import dynamicTour from "@/public/screenshots/dynamic-tour/dynamic-tour-landing.png";
 import WBSender from "@/public/screenshots/wbsender/wbsender-landing.jpg";
+import proSaveApp from "@/public/screenshots/pro-save-app/pro-save-app-ui.png";
 
 export const projectContent = [
   {
@@ -27,6 +28,22 @@ export const projectContent = [
       "Tailwind CSS",
     ],
     slug: "dynamic-travel",
+  },
+
+  {
+    id: 3,
+    title: "Property Save – Android Property Management App",
+    image: proSaveApp,
+    details:
+      "Developed the entire Android frontend for a full-scale property management app. Includes lead and property management, push notifications, Google Maps integration, and multi-step state-driven modals with full UI/UX redesign.",
+    tech: [
+      "React Native",
+      "Tailwind CSS / Nativewind",
+      "React Hook Form",
+      "Reanimated",
+      "Google Maps API",
+    ],
+    slug: "property-save-app",
   },
 
   {
