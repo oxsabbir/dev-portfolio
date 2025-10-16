@@ -1,0 +1,63 @@
+import ImageSlider from "../components/extra/image-slider";
+import LinkButton from "../components/extra/link-button";
+
+# WBSender – Streamlined WhatsApp Bulk Messaging for Businesses
+
+**WBSender** is a powerful and intuitive WhatsApp bulk messaging platform designed to help businesses engage customers at scale.  
+It offers smart contact management, campaign automation, and an elegant landing experience — making large-scale communication effortless and efficient.
+
+<ImageSlider
+  images={[
+    "/screenshots/wbsender/wbsender-landing.jpg",
+    "/screenshots/wbsender/wbsender-campaign.jpg",
+  ]}
+/>
+
+## ✨ Features
+
+- 💬 **Bulk Messaging** – Send personalized messages to hundreds of contacts in one click
+- 📤 **Excel Contact Import** – Upload `.xlsx` files, scan them instantly, and get a summary of imported vs. duplicate contacts
+- 🧮 **Smart Validation System** – Automatically detects and skips invalid or duplicate numbers during import
+- 🧭 **Server-Based Filtering** – Dynamically search and filter contacts (e.g., by range 30–60) for campaign targeting
+- 🧩 **Campaign Template System** – Reusable message templates to streamline repetitive campaigns
+- ⚡ **Campaign Creation Flow** – Multi-step, server state-driven modal that visually tracks progress through 5 steps, handling successes and stops gracefully
+- ⚙️ **Contact Management System** – Save imported contacts for future campaigns with easy access
+- 🌐 **Modern Landing Page** – Built from scratch with V0 and custom enhancements for a sleek, professional agency presentation
+
+<ImageSlider
+  images={[
+    "/screenshots/wbsender/wbsender-import.jpg",
+    "/screenshots/wbsender/wbsender-create-contact.gif",
+    "/screenshots/wbsender/wbsender-contact.jpg",
+  ]}
+/>
+
+## 🧠 Key Highlights (My Contribution)
+
+- Designed and developed a **conversion-focused landing page** using V0 and Tailwind customizations
+- Built an **interactive contact import modal** that scans Excel files in real-time, validates entries, and displays import statistics (total, valid, duplicates)
+- Implemented **server-based contact filtering** with range queries for flexible search and segmentation
+- Developed a **5-step, state-aware campaign creation modal** that updates users in real-time, handles step-by-step progress, and ensures campaigns complete successfully or stop safely on failure
+- Integrated **data validation and error handling** to improve reliability and user experience
+- Contributed ongoing **UX improvements** like success toasts, status indicators, and minor feature optimizations throughout the build
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- **Next.js**
+- **React**
+- **Tailwind CSS**
+- **Framer Motion**
+- **xlsx** (Excel parsing & import validation)
+
+### Backend
+
+- **Node.js / Express**
+- **Database Integration** (for dynamic contact filtering and campaign management)
+
+## 🚀 Check It Out
+
+<div className="flex flex-wrap gap-4 mt-4">
+  <LinkButton url="https://www.wbsender.net/" text="Live Site" color="green" />
+</div>

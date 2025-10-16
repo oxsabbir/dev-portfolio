@@ -21,7 +21,9 @@ export default function ImageSlider({ images }: { images: string[] }) {
       >
         {images.map((image, i) => (
           <SwiperSlide>
-            <img src={image} alt={`feature-image${i + 1}`} width={"auto"} />
+            <div className="w-ful flex justify-center items-center">
+              <img src={image} alt={`project-image${i + 1}`} width={"auto"} />
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
