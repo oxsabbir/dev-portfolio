@@ -1,6 +1,6 @@
 import proSaveLanding from "@/public/screenshots/pro-save/pro-save-landing.png";
 import dynamicTour from "@/public/screenshots/dynamic-tour/dynamic-tour-landing.png";
-import waveBlast from "@/public/screenshots/wbsender_landing.jpg";
+import waveBlast from "@/public/screenshots/wb-sender/wbsender_landing.jpg";
 
 export const projectContent = [
   {

@@ -9,10 +9,10 @@ export default function SwipeIn({
   className,
 }: {
   children: React.ReactNode;
-  className: string;
+  className?: string;
 }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { margin: "0px 0px -160px 0px", once: true });
+  const isInView = useInView(ref, { margin: "0px 0px -140px 0px", once: true });
   return (
     <motion.div
       ref={ref}

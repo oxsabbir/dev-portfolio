@@ -1,5 +1,6 @@
 import React from "react";
 import { LucideIcon } from "lucide-react";
+import SwipeIn from "./effect/swipe-in";
 
 type SectionWrapperProps = {
   title: string;
