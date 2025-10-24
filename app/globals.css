@@ -127,8 +127,8 @@ body {
     var(--border-fade-weak),
     var(--border-fade-strong),
     var(--border-fade-weak)
-  );
-  border-left: 1px solid transparent;
+  ) !important;
+  border-right: 1px solid transparent;
 }
 
 /* EXPERIENCE DATE DOT AND LINE */

@@ -36,10 +36,10 @@ export default function ProfileCard() {
           </div>
         </div>
         <div className=" flex items-center justify-between mt-5 px-4 text-sm gradientBorderTop font-semibold text-center">
-          <Link className="py-4 w-full" href={"#"}>
+          <Link className="py-4 gradientBorderCenter w-full" href={"#"}>
             Resume
           </Link>
-          <Link className="py-4 gradientBorderCenter w-full" href={"#"}>
+          <Link className="py-4  w-full" href={"#"}>
             Contact Me
           </Link>
         </div>

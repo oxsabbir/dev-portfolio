@@ -83,7 +83,7 @@ export default function Project() {
                   alt={project.title}
                   width={300}
                   height={200}
-                  className="min-h-[230px] object-top w-full rounded-lg shadow-md"
+                  className="h-full max-h-[250px] object-top w-full rounded-lg shadow-md"
                   src={project.image.src}
                 />
                 <div className="bg-secondery/30 w-full transition-all duration-200 opacity-0 flex group-hover:opacity-100 absolute h-full top-0 left-0 rounded-lg items-center justify-center">
