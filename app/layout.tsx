@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: "Sabbir Hossain Portfolio",
     images: [
       {
-        url: "",
+        url: "/profileImage.png",
         width: 1200,
         height: 630,
         alt: "Sabbir Hossain - Full-Stack Developer Portfolio",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: "Sabbir Hossain | Full-Stack Developer",
     description:
       "Full-stack developer specializing in React, Next.js, and Node.js — check out my latest web projects.",
-    images: [""],
+    images: ["/profileImage.png"],
   },
 };
 
