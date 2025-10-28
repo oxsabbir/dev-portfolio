@@ -6,7 +6,7 @@ import ProfileCard from "./profile-card";
 }
 export default function Hero() {
   return (
-    <div id="home" className="flex scroll-mt-16 flex-col gap-4 xl:flex-row">
+    <div id="home" className="flex scroll-mt-32 flex-col gap-4 xl:flex-row">
       <div className="min-w-[340px] ">
         <ProfileCard />
       </div>

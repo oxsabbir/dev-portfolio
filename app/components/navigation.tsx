@@ -33,8 +33,8 @@ export default function Navigation() {
 
   const scrollToSection = function (sectionId: string) {
     const section = document.getElementById(sectionId.replace("#", ""));
-    console.log(section, sectionId);
     if (!section) return;
+
     section.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
@@ -70,13 +70,14 @@ export default function Navigation() {
           </div>
           <ul className="items-center md:flex hidden">
             {navLinks.map((link) => (
-              <li
-                onClick={() => scrollToSection(link.path)}
-                key={link.path}
-                className="hover:bg-white/5 cursor-pointer transition-all duration-300 p-4 py-2 rounded-full"
-              >
-                {link.label}
-              </li>
+              <a key={link.path} href={link.path.replace("#", "/#")}>
+                <li
+                  onClick={() => scrollToSection(link.path)}
+                  className="hover:bg-white/5 cursor-pointer transition-all duration-300 p-4 py-2 rounded-full"
+                >
+                  {link.label}
+                </li>
+              </a>
             ))}
           </ul>
           <div className="flex justify-end">

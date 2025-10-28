@@ -245,7 +245,7 @@ export const educationData = [
 
 export const navLinks = [
   {
-    label: "About",
+    label: "Home",
     path: "#home",
     icon: User,
   },
@@ -259,22 +259,22 @@ export const navLinks = [
     path: "#skills",
     icon: Dumbbell,
   },
-  {
-    label: "Services",
-    path: "#services",
-    icon: Workflow,
-  },
+  // {
+  //   label: "Services",
+  //   path: "#services",
+  //   icon: Workflow,
+  // },
 
   // {
   //   label: "Resume",
   //   path: "/resume",
   //   icon: FileText,
   // },
-  {
-    label: "Blogs",
-    path: "#blogs",
-    icon: Newspaper,
-  },
+  // {
+  //   label: "Blogs",
+  //   path: "#blogs",
+  //   icon: Newspaper,
+  // },
   {
     label: "Contact",
     path: "#contact",

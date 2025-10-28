@@ -1,9 +1,10 @@
 import ImageSlider from "../components/extra/image-slider";
 import LinkButton from "../components/extra/link-button";
 
-# Dynamic Travel – The Ultimate Travel Booking Experience
+# Dynamic Travel – Smart & Seamless Tour Booking Platform
 
-**Dynamic Travel** is your all-in-one travel booking platform designed to make planning and managing trips effortless. From exploring bucket-list destinations to managing bookings and payments — everything is built to be seamless, fast, and modern.
+**Dynamic Travel** is a full-stack travel booking platform built from the ground up — covering everything from REST APIs to the frontend UI.  
+It lets users explore curated tours, book trips, rate experiences, and manage bookings, while admins oversee sales, tours, and guides through an interactive dashboard with live analytics.
 
 <ImageSlider
   images={[
@@ -16,61 +17,32 @@ import LinkButton from "../components/extra/link-button";
 
 ## ✨ Features
 
-- 🌐 **Explore Curated Tours** – Browse stunning tours with rich visuals and in-depth info
-- 🧠 **Smart Filtering** – Filter tours by price, location, duration, or rating
-- ⚡ **Instant Booking** – Real-time availability with one-click tour booking
-- 🧾 **User Dashboard** – Manage bookings, reviews, and personal info with ease
-- 💳 **Secure Payments** – Stripe-powered checkout for a smooth and secure experience
-- 🛠️ **Admin Panel** – Manage tours, users, and reviews (admin only)
+- 🌍 **Explore Curated Tours** – Stunning destinations with in-depth tour details.
+- ⚙️ **Advanced Filtering & Search** – Filter tours by price, duration, location, or rating.
+- ⭐ **Ratings & Reviews** – Users can review and rate tours post-booking.
+- 💳 **Instant Booking & Payments** – Secure checkout via Stripe with webhook events.
+- 🧭 **Interactive Map Integration** – Real-time map for exploring and managing tour spots.
+- 📊 **Admin Dashboard with Charts** – Monitor sales, bookings, and guide performance.
+- 👤 **User & Role Management** – Role-based dashboard segregation with access control.
+
+## 🧠 My Contributions
+
+- Developed the **entire stack**, including REST API, database models, and frontend integration.
+- Built a **modular Next.js frontend** and SSR optimization.
+- Implemented **dynamic chart visualizations** in the admin dashboard for analytics.
+- Created **interactive tour management** with map-based spot selection and updates.
+- Handled **authentication, authorization**, and secure user sessions with JWT.
+- Integrated **Stripe payments + webhooks** for booking and transaction tracking.
+- Designed **perfomance efficient** backend architecture using Express and MongoDB.
 
 ## 🛠️ Tech Stack
 
-### Frontend
-
-- **Next.js** (App Router)
-- **Tailwind CSS**
-- **TanStack Query** (React Query)
-
-### Backend
-
-- **Node.js** with **Express.js**
-- REST API
-
-### Database
-
-- **MongoDB** with **Mongoose**
-
-### Auth & Validation
-
-- **JWT** (Authentication)
-- **Zod** (Validation)
-
-### Payments
-
-- **Stripe API** (with webhook support)
-
-### 🗺️ Interactive Map & Spot Management
-
-Admins can add new spots directly on the map, and users can explore them in real-time.
-
-<ImageSlider
-  images={[
-    "/screenshots/dynamic-tour/dynamic-tour-map.png",
-    "/screenshots/dynamic-tour/dynamic-tour-update-2.png",
-  ]}
-/>
-
-- Clickable map markers for each tour spot
-- Admins can add/edit/remove spots without touching code
-- Users see updated spots instantly thanks to React Query
-
-## 🧠 Key Learnings
-
-- Modular and reusable components built with clean architecture
-- Auth flow with protected routes and role-based access (JWT)
-- Implemented Stripe payments + webhooks for booking updates
-- Lazy-loading images, SSR rendering, and query caching for speed
-- Dashboard segregation for users vs admins using clean layouts
+- **Frontend:** Next.js (App Router), Tailwind CSS, Swiper
+- **Backend:** Node.js, Express.js (REST API)
+- **Database:** MongoDB (Mongoose)
+- **Auth & Validation:** JWT
+- **Payments:** Stripe API (webhooks)
+- **Visualization:** Recharts.js
 
 ## 🚀 Check It Out
 

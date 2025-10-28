@@ -134,7 +134,7 @@ export default function Project() {
           </Button>
         ) : (
           <p className="text-sm  text-gray-600 dark:text-gray-400">
-            No more left
+            All caught up
           </p>
         )}
       </div>

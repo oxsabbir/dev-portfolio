@@ -69,10 +69,6 @@
   --border-primary: hsla(0, 0%, 100%, 0.122);
 }
 
-html {
-  scroll-behavior: smooth !important;
-}
-
 body {
   color: var(--foreground);
   background-repeat: no-repeat;
@@ -129,6 +125,12 @@ body {
     var(--border-fade-weak)
   ) !important;
   border-right: 1px solid transparent;
+}
+
+.scroll-container {
+  overflow: auto;
+  scroll-behavior: smooth;
+  height: 100vh; /* Or a fixed height */
 }
 
 /* EXPERIENCE DATE DOT AND LINE */
