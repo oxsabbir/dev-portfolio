@@ -8,20 +8,26 @@ import "swiper/css/pagination";
 import { Briefcase } from "lucide-react";
 import SectionWrapper from "./section-wrapper";
 import Button from "./ui/button";
-
 const experiences = [
   {
-    date: "May 2024 – Present",
+    date: "May 2025 – Present",
     role: "Frontend Developer",
     company: "Zippix.co",
     location: "Remote",
     description:
-      "Working as a frontend developer focused on building cross-platform apps using React Native and improving UI consistency across their web platforms.",
+      "Improved web platform UI/UX and state management. Developed multiple screens in React Native, managed app-wide state using Zustand, implemented authentication flows, integrated chatbot APIs, and built a real-time GPT-like chatbot for their conveyancing app.",
     slug: "zippix",
-    tech: ["React Native", "TypeScript", "Tailwind", "Next.js"],
+    tech: [
+      "React Native",
+      "TypeScript",
+      "Tailwind",
+      "Next.js",
+      "Zustand",
+      "Chatbot API",
+    ],
   },
   {
-    date: "Dec 2023 – Apr 2024",
+    date: "Dec 2023 – Apr 2025",
     role: "Frontend Developer",
     company: "Smart Material Technology",
     location: "Remote",

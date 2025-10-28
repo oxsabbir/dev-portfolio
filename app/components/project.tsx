@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Button from "./ui/button";
 import { ArrowUpRight, BriefcaseBusiness } from "lucide-react";
 import SectionWrapper from "./section-wrapper";
-import { useInView } from "motion/react";
 import SwipeIn from "./effect/swipe-in";
 import { projectContent, technololgyList } from "../data/project-content";
 
