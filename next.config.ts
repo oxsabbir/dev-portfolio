@@ -1,3 +1,16 @@
+// for fixing a bug related to localstorage being called at node environment because of next.js dev-status overlay
+
+if (typeof window === "undefined") {
+  global.localStorage = {
+    getItem: () => null,
+    setItem: () => {},
+    removeItem: () => {},
+    clear: () => {},
+    key: () => null,
+    length: 0,
+  };
+}
+
 import createMDX from "@next/mdx";
 import type { NextConfig } from "next";
 
