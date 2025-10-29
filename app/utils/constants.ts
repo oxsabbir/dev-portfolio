@@ -33,13 +33,7 @@ import {
 import {
   Linkedin,
   User,
-  BadgeCheck,
-  Hammer,
-  FolderKanban,
-  FileText,
-  Newspaper,
-  Mail,
-  UserPen,
+  Home,
   Contact,
   Briefcase,
   Dumbbell,
@@ -247,7 +241,7 @@ export const navLinks = [
   {
     label: "Home",
     path: "#home",
-    icon: User,
+    icon: Home,
   },
   {
     label: "Projects",

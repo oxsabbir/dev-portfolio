@@ -27,7 +27,7 @@ const experiences = [
     ],
   },
   {
-    date: "Dec 2023 – Apr 2025",
+    date: "Dec 2024 – Apr 2025",
     role: "Frontend Developer",
     company: "Smart Material Technology",
     location: "Remote",

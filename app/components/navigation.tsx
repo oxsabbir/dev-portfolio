@@ -71,12 +71,12 @@ export default function Navigation() {
           <ul className="items-center md:flex hidden">
             {navLinks.map((link) => (
               <a key={link.path} href={link.path.replace("#", "/#")}>
-                <li
+                <div
                   onClick={() => scrollToSection(link.path)}
-                  className="hover:bg-white/5 cursor-pointer transition-all duration-300 p-4 py-2 rounded-full"
+                  className="hover:bg-white/5 flex items-center gap-1.5 cursor-pointer transition-all duration-300 p-4 py-2 rounded-full"
                 >
-                  {link.label}
-                </li>
+                  <p>{link.label}</p>
+                </div>
               </a>
             ))}
           </ul>
